@@ -1,7 +1,7 @@
 {
 	"name": "@roxyapi/n8n-nodes-roxyapi",
 	"version": "1.0.0",
-	"description": "n8n node for RoxyAPI: astrology, horoscopes, Vedic kundli, human design, Chinese BaZi, feng shui, numerology, tarot, I Ching and more as workflow and AI Agent tool steps, verified against NASA JPL Horizons",
+	"description": "The Spiritual OS layer for agentic AI. 18+ domains, one key. Astrology, Vedic, tarot and more in n8n and its AI Agent. Verified against NASA JPL Horizons.",
 	"license": "MIT",
 	"homepage": "https://roxyapi.com/docs/integrations/n8n",
 	"keywords": [

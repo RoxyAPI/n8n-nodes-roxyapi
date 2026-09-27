@@ -12,7 +12,7 @@ export class RoxyApi implements INodeType {
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',
 		description:
-			'Astrology, horoscopes, tarot, numerology and more insight domains on one API key, verified against NASA JPL Horizons',
+			'Astrology, Vedic, tarot, numerology and 18+ insight domains on one key, verified against NASA JPL Horizons',
 		defaults: {
 			name: 'RoxyAPI',
 		},
