@@ -1474,7 +1474,7 @@ export const crystalsDescription: INodeProperties[] = [
 		],
 	},
 	{
-		displayName: 'Q',
+		displayName: 'Query',
 		name: 'q',
 		type: 'string',
 		default: '',

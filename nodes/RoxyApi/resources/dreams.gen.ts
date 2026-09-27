@@ -229,7 +229,7 @@ export const dreamsDescription: INodeProperties[] = [
 				},
 			},
 			{
-				displayName: 'Q',
+				displayName: 'Query',
 				name: 'q',
 				type: 'string',
 				default: '',

@@ -10,7 +10,7 @@ Build a daily horoscope newsletter, a natal chart on every form submission, a ta
 
 ## How do I install the RoxyAPI node in n8n?
 
-1. In n8n, open **Settings**, then **Community Nodes**, then **Install**.
+1. In n8n, open **Settings → Community Nodes → Install**.
 2. Enter `@roxyapi/n8n-nodes-roxyapi` and confirm.
 3. Add a node to any workflow and search for **RoxyAPI**, or for what you need: horoscope, natal chart, tarot, numerology, kundli.
 
@@ -45,12 +45,12 @@ Pick a **Resource** (the domain), then an **Operation** (the calculation). Requi
 | Biorhythm | 6 |
 | Ayurveda | 8 |
 | I-Ching | 9 |
-| Crystals and Healing Stones | 12 |
-| Dreams | 5 |
-| Angel Numbers | 4 |
+| Crystal and Healing Stone | 12 |
+| Dream | 5 |
+| Angel Number | 4 |
 | Location and Timezone | 3 |
 | Usage | 1 |
-| Languages | 2 |
+| Language | 2 |
 <!-- END:RESOURCES -->
 
 Every operation is listed at the end of this page.
@@ -75,9 +75,9 @@ The calculations most products are built on, one row per domain:
 | Biorhythm | Get Reading, Get Forecast |
 | Ayurveda | Calculate Ayurvedic Constitution, Get Dinacharya Schedule |
 | I-Ching | Cast Reading, List Hexagrams |
-| Crystals and Healing Stones | Get Crystals by Zodiac, Get Crystals by Chakra, Get Birthstones |
-| Dreams | Get Dream Symbol, Search Dream Symbols |
-| Angel Numbers | Get Angel Number, Analyze Number Sequence |
+| Crystal and Healing Stone | Get Crystals by Zodiac, Get Crystals by Chakra, Get Birthstones |
+| Dream | Get Dream Symbol, Search Dream Symbols |
+| Angel Number | Get Angel Number, Analyze Number Sequence |
 
 ## Can the n8n AI Agent use RoxyAPI as a tool?
 
@@ -431,7 +431,7 @@ I-Ching oracle API with all 64 hexagrams, 384 changing lines, 8 trigrams, and mo
 - **List Trigrams**: List all 8 trigrams: Bagua trigram catalog API
 - **Get Trigram**: Get trigram by number or name: Bagua trigram detail API
 
-### Crystals and Healing Stones
+### Crystal and Healing Stone
 
 Crystal healing API covering the most popular and widely-searched healing crystals and gemstones, from Amethyst and Rose Quartz to Moldavite and Selenite, each with its spiritual, emotional, and physical properties.
 
@@ -448,7 +448,7 @@ Crystal healing API covering the most popular and widely-searched healing crysta
 - **List Crystals**: List all crystals: Crystal healing database API
 - **Get Crystal**: Get crystal by id: Crystal healing properties API
 
-### Dreams
+### Dream
 
 Dream interpretation API with a 2,000+ symbol dream dictionary and psychological meanings covering animals, objects, emotions, people, scenarios, and abstract concepts.
 
@@ -458,7 +458,7 @@ Dream interpretation API with a 2,000+ symbol dream dictionary and psychological
 - **Get Dream Symbol**: Get dream symbol by id: Dream interpretation API
 - **Get Daily Dream Symbol**: Daily dream symbol: Dream symbol of the day API
 
-### Angel Numbers
+### Angel Number
 
 Angel numbers API with meanings for 111, 222, 333, 444, 555, 666, 777, 888, 999, 1111, and 75+ sequences covering every common family.
 
@@ -481,7 +481,7 @@ Monitor your API usage, check rate limits, and track request consumption.
 
 - **Get Usage Stats**: Get API usage statistics
 
-### Languages
+### Language
 
 List the response languages accepted by the lang query parameter on every i18n-aware endpoint.
 

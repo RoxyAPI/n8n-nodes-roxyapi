@@ -1,3 +1,5 @@
+import pluralize from 'pluralize';
+
 /**
  * The one reading of `specs/openapi.json`. The generator (node files and README) and the tests
  * both derive the node from here, so a new domain or endpoint in the spec needs no edit anywhere
@@ -100,7 +102,13 @@ const RESERVED = new Set(['resource', 'operation', 'options']);
 const RENAMED: Record<string, string> = { limit: 'maxResults', color: 'shade' };
 
 /** Display-only words n8n style requires in a given casing. Never touches a request. */
-const WORDS: Record<string, string> = { id: 'ID', iso2: 'ISO2', lang: 'Language', utc: 'UTC' };
+const WORDS: Record<string, string> = {
+	id: 'ID',
+	iso2: 'ISO2',
+	lang: 'Language',
+	q: 'Query',
+	utc: 'UTC',
+};
 
 /**
  * Small words kept lower case mid-title. The node files are then corrected by the n8n fixer
@@ -124,6 +132,23 @@ const SMALL = new Set([
 	'vs',
 	'with',
 ]);
+
+/**
+ * n8n style names a resource in the singular, and its lint fixer singularizes only the LAST
+ * word of a label ("Crystals and Healing Stones" became "Crystals and Healing Stone"). Each
+ * word is singularized here with the same library and test the rule uses, so the node and
+ * the README read one natural name.
+ */
+function singular(label: string): string {
+	return label
+		.split(' ')
+		.map((w) =>
+			pluralize.isPlural(w) && pluralize.singular(w) !== pluralize.plural(w)
+				? pluralize.singular(w)
+				: w,
+		)
+		.join(' ');
+}
 
 function fail(message: string): never {
 	throw new Error(`model: ${message}`);
@@ -308,7 +333,7 @@ export function buildModel(spec: Spec): NodeModel {
 			const value = pathNamespace(path);
 			const resource = byTag.get(tag) ?? {
 				value,
-				name: tag,
+				name: singular(tag),
 				description: plain(spec.tags?.find((t) => t.name === tag)?.description, 1),
 				operations: [],
 			};

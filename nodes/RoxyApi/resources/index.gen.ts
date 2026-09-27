@@ -53,7 +53,7 @@ export const resourceProperties: INodeProperties[] = [
 					'Chinese zodiac and BaZi astrology API: Four Pillars charts, Chinese zodiac signs and the Chinese lunisolar calendar from any birth moment: year, month, day and hour pillars with hidden stems, Na Yin and Ten God relations, luck pillars, day master strength, and animal compatibility',
 			},
 			{
-				name: 'Crystals and Healing Stone',
+				name: 'Crystal and Healing Stone',
 				value: 'crystals',
 				description:
 					'Crystal healing API covering the most popular and widely-searched healing crystals and gemstones, from Amethyst and Rose Quartz to Moldavite and Selenite, each with its spiritual, emotional, and physical properties',

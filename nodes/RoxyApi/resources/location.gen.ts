@@ -166,7 +166,7 @@ export const locationDescription: INodeProperties[] = [
 		],
 	},
 	{
-		displayName: 'Q',
+		displayName: 'Query',
 		name: 'q',
 		type: 'string',
 		default: '',
