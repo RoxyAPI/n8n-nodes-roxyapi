@@ -1,0 +1,13 @@
+pre-commit:
+  commands:
+    codegen-drift:
+      run: ROXYAPI_SPEC_FILE=specs/openapi.json npm run generate && git diff --exit-code -- specs/openapi.json nodes/RoxyApi/spec.gen.ts nodes/RoxyApi/resources README.md || { echo "regenerated output differs, stage it"; exit 1; }
+    lint:
+      run: npm run lint
+    format:
+      run: npm run format:check
+
+pre-push:
+  commands:
+    test:
+      run: npm run typecheck && npm test

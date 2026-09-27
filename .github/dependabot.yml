@@ -1,0 +1,22 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    cooldown:
+      default-days: 3
+    groups:
+      dev-dependencies:
+        patterns: ['*']
+    ignore:
+      # The n8n toolchain pins the lint rules the generated node must pass and that n8n
+      # verification re-runs. A bump can change fixer output, so it moves by hand with a
+      # regenerate, a lint and a dispatched release, never by dependabot.
+      - dependency-name: '@n8n/node-cli'
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

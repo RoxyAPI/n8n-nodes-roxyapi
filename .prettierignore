@@ -1,0 +1,4 @@
+# Written by their generators, never by prettier.
+README.md
+specs/
+package-lock.json

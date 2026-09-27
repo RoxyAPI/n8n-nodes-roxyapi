@@ -1,0 +1,93 @@
+name: Release
+
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+    inputs:
+      version_bump:
+        description: 'patch | minor | major'
+        required: false
+        default: 'patch'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      id-token: write
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # Release tags are the ledger the gate below reads; a shallow checkout has none.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+          cache: npm
+
+      - run: npm ci
+
+      - name: Regenerate from the live spec
+        run: npm run generate
+
+      # Compare against the last RELEASED tag, never the working tree: a hand-committed
+      # regeneration would otherwise read as "nothing changed" and skip every publish.
+      - name: Is the published release built from the current spec?
+        id: diff
+        run: |
+          LAST=$(git describe --tags --abbrev=0 --match 'v*' 2>/dev/null || true)
+          if [ -z "$LAST" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git show "$LAST:specs/openapi.json" | jq -cS . > "$RUNNER_TEMP/released-spec.json"
+          jq -cS . specs/openapi.json > "$RUNNER_TEMP/current-spec.json"
+          if cmp -s "$RUNNER_TEMP/released-spec.json" "$RUNNER_TEMP/current-spec.json"; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Bump version
+        id: bump
+        if: steps.diff.outputs.changed == 'true' || github.event_name == 'workflow_dispatch'
+        run: |
+          npm version ${{ github.event.inputs.version_bump || 'patch' }} --no-git-tag-version
+          VERSION=$(node -p "require('./package.json').version")
+          echo "export const VERSION = '$VERSION';" > nodes/RoxyApi/version.ts
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Typecheck and test
+        if: steps.bump.outcome == 'success'
+        run: npm run typecheck && npm test
+
+      # In GitHub Actions the n8n release command lints, builds and runs npm publish with
+      # provenance, which n8n requires of every community node. npm authenticates through
+      # the trusted publisher configured for this workflow, so no token is stored.
+      - name: Publish to npm
+        if: steps.bump.outcome == 'success'
+        run: |
+          npm install -g npm@latest
+          npm run release
+
+      - name: Commit, tag, push
+        if: steps.bump.outcome == 'success'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          VERSION=${{ steps.bump.outputs.version }}
+          git add package.json package-lock.json nodes/RoxyApi specs/openapi.json README.md
+          git commit -m "release: v$VERSION"
+          git tag "v$VERSION"
+          git push --follow-tags
+
+      - name: Create GitHub release
+        if: steps.bump.outcome == 'success'
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: v${{ steps.bump.outputs.version }}
+          generate_release_notes: true
+          make_latest: 'true'

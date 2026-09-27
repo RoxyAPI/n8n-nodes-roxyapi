@@ -1,0 +1,96 @@
+{
+	"name": "@roxyapi/n8n-nodes-roxyapi",
+	"version": "1.0.0",
+	"description": "n8n node for RoxyAPI: astrology, horoscopes, Vedic kundli, human design, Chinese BaZi, feng shui, numerology, tarot, I Ching and more as workflow and AI Agent tool steps, verified against NASA JPL Horizons",
+	"license": "MIT",
+	"homepage": "https://roxyapi.com/docs/integrations/n8n",
+	"keywords": [
+		"n8n-community-node-package",
+		"n8n",
+		"n8n-node",
+		"n8n-ai-agent-tool",
+		"workflow-automation",
+		"astrology",
+		"astrology-api",
+		"horoscope",
+		"daily-horoscope",
+		"natal-chart",
+		"birth-chart",
+		"synastry",
+		"vedic-astrology",
+		"kundli",
+		"panchang",
+		"human-design",
+		"chinese-zodiac",
+		"bazi",
+		"feng-shui",
+		"mayan-astrology",
+		"vastu",
+		"numerology",
+		"kabbalah",
+		"tarot",
+		"biorhythm",
+		"ayurveda",
+		"i-ching",
+		"crystals",
+		"dream-interpretation",
+		"angel-numbers",
+		"roxyapi"
+	],
+	"author": {
+		"name": "RoxyAPI",
+		"email": "hello@roxyapi.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/RoxyAPI/n8n-nodes-roxyapi.git"
+	},
+	"bugs": {
+		"url": "https://github.com/RoxyAPI/n8n-nodes-roxyapi/issues"
+	},
+	"scripts": {
+		"generate": "node scripts/generate.mts && eslint --fix nodes/RoxyApi/resources && prettier --write --log-level warn nodes/RoxyApi",
+		"build": "n8n-node build",
+		"lint": "n8n-node lint",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"typecheck": "tsc --noEmit -p tsconfig.scripts.json",
+		"test": "n8n-node build && node --test tests/*.test.mts",
+		"e2e": "node scripts/e2e.mts",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist",
+		"!dist/tsconfig.tsbuildinfo",
+		"!dist/package.json",
+		"!dist/**/*.map",
+		"!dist/**/*.d.ts"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/RoxyApiApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/RoxyApi/RoxyApi.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "0.49.1",
+		"@types/node": "^24.0.0",
+		"eslint": "9.39.4",
+		"prettier": "3.6.2",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"engines": {
+		"node": ">=22.18"
+	}
+}

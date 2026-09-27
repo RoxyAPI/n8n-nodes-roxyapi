@@ -1,0 +1,38 @@
+{
+	"node": "@roxyapi/n8n-nodes-roxyapi.roxyApi",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Miscellaneous", "Development"],
+	"alias": [
+		"astrology",
+		"horoscope",
+		"natal chart",
+		"birth chart",
+		"vedic",
+		"kundli",
+		"panchang",
+		"human design",
+		"chinese zodiac",
+		"bazi",
+		"feng shui",
+		"numerology",
+		"tarot",
+		"i ching",
+		"crystals",
+		"dream",
+		"angel number",
+		"zodiac"
+	],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://github.com/RoxyAPI/n8n-nodes-roxyapi#connect-your-api-key"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://roxyapi.com/docs/integrations/n8n"
+			}
+		]
+	}
+}
