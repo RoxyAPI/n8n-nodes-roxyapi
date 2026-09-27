@@ -29,31 +29,55 @@ Pick a **Resource** (the domain), then an **Operation** (the calculation). Requi
 <!-- BEGIN:RESOURCES -->
 261 operations across 20 resources, one per RoxyAPI domain, in the order the API lists them.
 
-| Resource | Operations | For example |
-|---|---|---|
-| Western Astrology | 39 | List Zodiac Signs, Get Zodiac Sign, List Planet Meanings |
-| Vedic Astrology | 58 | Generate Birth Chart, Generate Navamsa, Generate Divisional Chart |
-| Forecast | 5 | Generate Timeline, Forecast Transits, Find Significant Dates |
-| Human Design | 12 | Generate Bodygraph, Calculate Connection, Calculate Penta |
-| Chinese Astrology | 16 | Generate Bazi Chart, Calculate Luck Pillars, Calculate Day Master Strength |
-| Feng Shui | 11 | Calculate Kua Number, Get Kua Number, Generate Eight Mansions |
-| Mesoamerican Astrology | 18 | Calculate Tzolkin, Generate Mayan Chart, Convert Long Count |
-| Vastu | 10 | Calculate Entrance Pada, Generate Mandala, Calculate Plot Analysis |
-| Numerology | 20 | Calculate Life Path, Calculate Expression, Calculate Bridge Numbers |
-| Kabbalah | 12 | Calculate Gematria, List Gematria Ciphers, Generate Name Profile |
-| Tarot | 10 | List Cards, Get Card, Draw Cards |
-| Biorhythm | 6 | Get Reading, Get Forecast, Get Critical Days |
-| Ayurveda | 8 | Calculate Ayurvedic Constitution, Get Dinacharya Schedule, Get Ritucharya |
-| I-Ching | 9 | Get Daily Hexagram, Cast Daily Reading, List Hexagrams |
-| Crystals and Healing Stones | 12 | Get Crystals by Zodiac, Get Crystals by Chakra, Get Crystals by Element |
-| Dreams | 5 | Search Dream Symbols, Get Random Symbols, Get Symbol Letter Counts |
-| Angel Numbers | 4 | List Angel Numbers, Get Angel Number, Analyze Number Sequence |
-| Location and Timezone | 3 | Search Cities, List Countries, Get Cities by Country |
-| Usage | 1 | Get Usage Stats |
-| Languages | 2 | Get Field Labels, List Languages |
+| Resource | Operations |
+|---|---|
+| Western Astrology | 39 |
+| Vedic Astrology | 58 |
+| Forecast | 5 |
+| Human Design | 12 |
+| Chinese Astrology | 16 |
+| Feng Shui | 11 |
+| Mesoamerican Astrology | 18 |
+| Vastu | 10 |
+| Numerology | 20 |
+| Kabbalah | 12 |
+| Tarot | 10 |
+| Biorhythm | 6 |
+| Ayurveda | 8 |
+| I-Ching | 9 |
+| Crystals and Healing Stones | 12 |
+| Dreams | 5 |
+| Angel Numbers | 4 |
+| Location and Timezone | 3 |
+| Usage | 1 |
+| Languages | 2 |
 <!-- END:RESOURCES -->
 
 Every operation is listed at the end of this page.
+
+## Which operations should I start with?
+
+The calculations most products are built on, one row per domain:
+
+| Resource | Start with |
+|---|---|
+| Western Astrology | Generate Natal Chart, Get Daily Horoscope, Calculate Synastry, Get Current Moon Phase |
+| Vedic Astrology | Generate Birth Chart, Get Detailed Panchang, Get Current Dasha, Check Manglik Dosha, Calculate Gun Milan, Get Kp Ruling Planets |
+| Forecast | Forecast Transits, Generate Timeline |
+| Human Design | Generate Bodygraph, Calculate Connection |
+| Chinese Astrology | Generate Bazi Chart, Calculate Zodiac Animal, Get Almanac Day |
+| Feng Shui | Calculate Kua Number, Generate Flying Star Chart |
+| Mesoamerican Astrology | Calculate Tzolkin, Generate Mayan Chart |
+| Vastu | Calculate Entrance Pada, Calculate Room Compliance |
+| Numerology | Calculate Life Path, Generate Numerology Chart, Calculate Personal Year |
+| Kabbalah | Calculate Gematria, Generate Birth Profile |
+| Tarot | Get Daily Card, Cast Three Card, Cast Celtic Cross, Cast Yes No |
+| Biorhythm | Get Reading, Get Forecast |
+| Ayurveda | Calculate Ayurvedic Constitution, Get Dinacharya Schedule |
+| I-Ching | Cast Reading, List Hexagrams |
+| Crystals and Healing Stones | Get Crystals by Zodiac, Get Crystals by Chakra, Get Birthstones |
+| Dreams | Get Dream Symbol, Search Dream Symbols |
+| Angel Numbers | Get Angel Number, Analyze Number Sequence |
 
 ## Can the n8n AI Agent use RoxyAPI as a tool?
 
@@ -63,7 +87,7 @@ Yes. Connect the RoxyAPI node to the **Tool** input of an **AI Agent** node and 
 
 1. **Schedule Trigger**, every day at 06:00.
 2. **RoxyAPI**, resource **Western Astrology**, operation **Get Daily Horoscope**, sign **Aries**. Under **Options**, add **Timezone** with the timezone of your audience, for example `America/New_York`, so the day rolls over on their clock.
-3. Any email node, with the `overview` field of the previous step in the body.
+3. Any email node, with the `column` field of the previous step as the body: a complete piece of 120 to 180 words, ready to send. For a push notification or SMS, use the 30 to 60 word `overview` instead.
 
 Feed the twelve signs in from a **Code** node instead of fixing **Aries**, and the whole newsletter runs itself.
 

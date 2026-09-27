@@ -248,15 +248,9 @@ function syncReadme(model: NodeModel): void {
 	const summary = [
 		`${total} operations across ${model.resources.length} resources, one per RoxyAPI domain, in the order the API lists them.`,
 		'',
-		'| Resource | Operations | For example |',
-		'|---|---|---|',
-		...model.resources.map(
-			(r) =>
-				`| ${r.name} | ${r.operations.length} | ${r.operations
-					.slice(0, 3)
-					.map((o) => o.name)
-					.join(', ')} |`,
-		),
+		'| Resource | Operations |',
+		'|---|---|',
+		...model.resources.map((r) => `| ${r.name} | ${r.operations.length} |`),
 	].join('\n');
 	const reference = model.resources
 		.map((r) =>

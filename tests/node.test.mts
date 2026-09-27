@@ -109,3 +109,24 @@ test('the credential sends the key header and tests it against the spec server',
 		'credential test path is not a GET in the spec',
 	);
 });
+
+test('every operation the README recommends exists in the spec', () => {
+	const readme = readFileSync('README.md', 'utf8');
+	const section = readme.split('## Which operations should I start with?')[1]?.split('\n## ')[0];
+	assert.ok(section, 'README lost its start-with section');
+	const rows = section.split('\n').filter((l) => /^\| [^-]/.test(l) && !l.startsWith('| Resource'));
+	assert.ok(rows.length > 0);
+	for (const row of rows) {
+		const [name, operations] = row
+			.split('|')
+			.slice(1, 3)
+			.map((c) => c.trim());
+		const resource = model.resources.find((r) => r.name === name);
+		assert.ok(resource, `README names a resource the spec lacks: ${name}`);
+		for (const op of operations.split(', '))
+			assert.ok(
+				resource.operations.some((o) => o.name === op),
+				`README names an operation ${name} lacks: ${op}`,
+			);
+	}
+});
