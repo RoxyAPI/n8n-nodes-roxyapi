@@ -697,7 +697,7 @@ export const ayurvedaDescription: INodeProperties[] = [
 				default: '',
 				placeholder: 'e.g. America/New_York or Europe/London',
 				description:
-					'Timezone as an IANA name such as "Europe/London", or as decimal hours from UTC such as 5.5. An IANA name is resolved to the offset in force on the requested date.',
+					'Timezone as an IANA name such as "Europe/London", or as decimal hours from UTC such as 5.5. An IANA name is resolved to the offset in force on the requested date, and on the clock-hour grid at the local hour each block opens, so on a daylight-saving change every block keeps its printed hour and...',
 				routing: {
 					send: {
 						type: 'body',

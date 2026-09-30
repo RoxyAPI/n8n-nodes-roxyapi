@@ -3956,7 +3956,7 @@ export const astrologyDescription: INodeProperties[] = [
 		placeholder: 'e.g. 2026-08-15',
 		required: true,
 		description:
-			'Approximate date near the expected planetary return (YYYY-MM-DD). Provide a date within the expected return window.',
+			'Approximate date near the expected planetary return (YYYY-MM-DD). The return nearest this date is returned, so a date off by months still lands on a genuine return; during a retrograde loop the planet crosses its natal degree up to three times and the crossing nearest the date is the one returned.',
 		routing: {
 			send: {
 				type: 'body',
@@ -5834,11 +5834,11 @@ export const astrologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 1900,
-					maxValue: 2100,
+					minValue: 1551,
+					maxValue: 2649,
 				},
 				description:
-					'Year for the declination calendar (1900-2100). Defaults to the current year (UTC).',
+					'Year for the declination calendar (1551 to 2649). Defaults to the current year (UTC).',
 				routing: {
 					send: {
 						type: 'body',
@@ -6145,11 +6145,11 @@ export const astrologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 1900,
-					maxValue: 2100,
+					minValue: 1551,
+					maxValue: 2649,
 				},
 				description:
-					'Year for the aspect calendar (1900-2100). Defaults to the current year (UTC).',
+					'Year for the aspect calendar (1551 to 2649). Defaults to the current year (UTC).',
 				routing: {
 					send: {
 						type: 'body',
@@ -6251,11 +6251,11 @@ export const astrologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 1900,
-					maxValue: 2100,
+					minValue: 1551,
+					maxValue: 2649,
 				},
 				description:
-					'Year for the monthly ephemeris (1900-2100). Defaults to the current year (UTC).',
+					'Year for the monthly ephemeris (1551 to 2649). Defaults to the current year (UTC).',
 				routing: {
 					send: {
 						type: 'body',
@@ -6397,11 +6397,11 @@ export const astrologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 1900,
-					maxValue: 2100,
+					minValue: 1551,
+					maxValue: 2649,
 				},
 				description:
-					'Year for the monthly transit table (1900-2100). Defaults to the current year (UTC).',
+					'Year for the monthly transit table (1551 to 2649). Defaults to the current year (UTC).',
 				routing: {
 					send: {
 						type: 'body',
@@ -6417,11 +6417,11 @@ export const astrologyDescription: INodeProperties[] = [
 		type: 'number',
 		default: 2026,
 		typeOptions: {
-			minValue: 1900,
-			maxValue: 2100,
+			minValue: 1551,
+			maxValue: 2649,
 		},
 		required: true,
-		description: 'Calendar year (1900-2100)',
+		description: 'Calendar year, 1551 to 2649',
 		displayOptions: {
 			show: {
 				resource: ['astrology'],
@@ -6611,11 +6611,11 @@ export const astrologyDescription: INodeProperties[] = [
 		type: 'number',
 		default: 2026,
 		typeOptions: {
-			minValue: 1900,
-			maxValue: 2100,
+			minValue: 1551,
+			maxValue: 2649,
 		},
 		required: true,
-		description: 'Year to scan for node passages (1900-2100)',
+		description: 'Year to scan for node passages (1551 to 2649)',
 		routing: {
 			send: {
 				type: 'body',

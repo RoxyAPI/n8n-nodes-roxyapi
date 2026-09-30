@@ -128,7 +128,7 @@ export const dreamsDescription: INodeProperties[] = [
 		placeholder: 'e.g. snake',
 		required: true,
 		description:
-			'Unique symbol identifier in kebab-case (e.g., "snake", "being-chased", "teeth-falling-out")',
+			'Unique symbol identifier in kebab-case (e.g., "snake", "chase-dreams", "losing-teeth")',
 		displayOptions: {
 			show: {
 				resource: ['dreams'],

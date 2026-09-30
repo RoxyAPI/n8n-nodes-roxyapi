@@ -313,8 +313,8 @@ export const forecastDescription: INodeProperties[] = [
 		type: 'number',
 		default: 2026,
 		typeOptions: {
-			minValue: 1900,
-			maxValue: 2200,
+			minValue: 1551,
+			maxValue: 2649,
 		},
 		required: true,
 		description:

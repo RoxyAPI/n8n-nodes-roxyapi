@@ -2630,7 +2630,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 		},
 		required: true,
 		description:
-			'Observer latitude in decimal degrees. Used for topocentric declination corrections.',
+			'Birth latitude in decimal degrees, part of the birth record. Declinations are geocentric, as every published ephemeris prints them, so it does not move them.',
 		routing: {
 			send: {
 				type: 'body',
@@ -2656,7 +2656,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 		},
 		required: true,
 		description:
-			'Observer longitude in decimal degrees. Affects local time context for declination calculations.',
+			'Birth longitude in decimal degrees, part of the birth record. Declinations are geocentric, so it does not move them; the instant comes from date, time and timezone.',
 		routing: {
 			send: {
 				type: 'body',
@@ -6379,11 +6379,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 		type: 'number',
 		default: 2026,
 		typeOptions: {
-			minValue: 1900,
-			maxValue: 2100,
+			minValue: 1551,
+			maxValue: 2649,
 		},
 		required: true,
-		description: 'Year to scan for ecliptic crossings (1900-2100)',
+		description: 'Year to scan for ecliptic crossings (1551 to 2649)',
 		routing: {
 			send: {
 				type: 'body',
@@ -8708,10 +8708,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 1900,
-					maxValue: 2100,
+					minValue: 1551,
+					maxValue: 2649,
 				},
-				description: 'Year for monthly analysis (1900-2100). Defaults to the current year (UTC).',
+				description:
+					'Year for monthly analysis (1551 to 2649). Defaults to the current year (UTC).',
 				routing: {
 					send: {
 						type: 'body',
@@ -9151,10 +9152,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 1900,
-					maxValue: 2100,
+					minValue: 1551,
+					maxValue: 2649,
 				},
-				description: 'Year for monthly analysis (1900-2100). Defaults to the current year (UTC).',
+				description:
+					'Year for monthly analysis (1551 to 2649). Defaults to the current year (UTC).',
 				routing: {
 					send: {
 						type: 'body',
@@ -9280,10 +9282,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 1900,
-					maxValue: 2100,
+					minValue: 1551,
+					maxValue: 2649,
 				},
-				description: 'Year for monthly ephemeris (1900-2100). Defaults to the current year (UTC).',
+				description:
+					'Year for monthly ephemeris (1551 to 2649). Defaults to the current year (UTC).',
 				routing: {
 					send: {
 						type: 'body',
@@ -9402,11 +9405,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 1900,
-					maxValue: 2100,
+					minValue: 1551,
+					maxValue: 2649,
 				},
 				description:
-					'Year for monthly parallel analysis (1900-2100). Defaults to the current year (UTC).',
+					'Year for monthly parallel analysis (1551 to 2649). Defaults to the current year (UTC).',
 				routing: {
 					send: {
 						type: 'body',
@@ -9549,11 +9552,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 1900,
-					maxValue: 2100,
+					minValue: 1551,
+					maxValue: 2649,
 				},
 				description:
-					'Year for monthly transit analysis (1900-2100). Defaults to the current year (UTC).',
+					'Year for monthly transit analysis (1551 to 2649). Defaults to the current year (UTC).',
 				routing: {
 					send: {
 						type: 'body',

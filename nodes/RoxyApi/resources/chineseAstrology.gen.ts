@@ -280,8 +280,8 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 		type: 'number',
 		default: 2026,
 		typeOptions: {
-			minValue: 1900,
-			maxValue: 2100,
+			minValue: 1551,
+			maxValue: 2649,
 		},
 		required: true,
 		description:
@@ -360,7 +360,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'clock',
 				description:
-					'Which clock the HOUR branch is read from. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts to the mean sun over the birth longitude, a correction of up to 59 minutes at the edge of a wide time zone....',
+					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts...',
 				routing: {
 					send: {
 						type: 'body',
@@ -730,7 +730,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'clock',
 				description:
-					'Which clock the HOUR branch is read from. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts to the mean sun over the birth longitude, a correction of up to 59 minutes at the edge of a wide time zone....',
+					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts...',
 				routing: {
 					send: {
 						type: 'body',
@@ -973,8 +973,8 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 1900,
-					maxValue: 2100,
+					minValue: 1551,
+					maxValue: 2649,
 				},
 				description:
 					'First Gregorian year of the annual pillar overlay. Omit it to leave annualPillars out of the response entirely.',
@@ -1069,7 +1069,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'clock',
 				description:
-					'Which clock the HOUR branch is read from. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts to the mean sun over the birth longitude, a correction of up to 59 minutes at the edge of a wide time zone....',
+					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts...',
 				routing: {
 					send: {
 						type: 'body',
@@ -1592,7 +1592,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'clock',
 				description:
-					'Which clock the HOUR branch is read from. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts to the mean sun over the birth longitude, a correction of up to 59 minutes at the edge of a wide time zone....',
+					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts...',
 				routing: {
 					send: {
 						type: 'body',

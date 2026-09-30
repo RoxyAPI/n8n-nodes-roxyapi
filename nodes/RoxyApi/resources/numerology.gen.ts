@@ -1683,7 +1683,7 @@ export const numerologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2026,
 				typeOptions: {
-					minValue: 2020,
+					minValue: 100,
 					maxValue: 2100,
 				},
 				description: 'Target year for calculation (defaults to current year)',
@@ -1819,7 +1819,7 @@ export const numerologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2025,
 				typeOptions: {
-					minValue: 2020,
+					minValue: 100,
 					maxValue: 2100,
 				},
 				description: 'Year to calculate (defaults to current year)',
@@ -2038,7 +2038,7 @@ export const numerologyDescription: INodeProperties[] = [
 					minValue: 1,
 					maxValue: 31,
 				},
-				description: 'Birth day (checks Life Path)',
+				description: 'Birth day (checks Birth Day on its own, and Life Path with year and month)',
 				routing: {
 					send: {
 						type: 'body',
@@ -2266,7 +2266,7 @@ export const numerologyDescription: INodeProperties[] = [
 				type: 'number',
 				default: 2025,
 				typeOptions: {
-					minValue: 2020,
+					minValue: 100,
 					maxValue: 2100,
 				},
 				description: 'Year for Personal Year calculation (defaults to current year)',
