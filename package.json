@@ -1,6 +1,6 @@
 {
 	"name": "@roxyapi/n8n-nodes-roxyapi",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "The Spiritual OS layer for agentic AI. 18+ domains, one key. Astrology, Vedic, tarot and more in n8n and its AI Agent. Verified against NASA JPL Horizons.",
 	"license": "MIT",
 	"homepage": "https://roxyapi.com/docs/integrations/n8n",
