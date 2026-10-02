@@ -116,7 +116,7 @@ export const resourceProperties: INodeProperties[] = [
 				name: 'Numerology',
 				value: 'numerology',
 				description:
-					'Numerology API to calculate life path, expression, soul urge, personality, and maturity numbers, with Pinnacle and Challenge life-phase timing, Hidden Passion, Subconscious Self, and Cornerstone and Capstone name analysis',
+					'Numerology API for life path numbers, complete numerology charts and compatibility, in both Pythagorean and Chaldean numerology',
 			},
 			{
 				name: 'Tarot',

@@ -17,7 +17,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Analyze Karmic Lessons',
 				value: 'analyzeKarmicLessons',
 				action: 'Analyze karmic lessons',
-				description: 'Analyze Karmic Lessons: Life lessons from missing numbers',
+				description: 'Analyze Karmic Lessons: Missing numbers numerology API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -29,7 +29,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Birth Day',
 				value: 'calculateBirthDay',
 				action: 'Calculate birth day',
-				description: 'Calculate Birth Day number: Special talents from day of birth',
+				description: 'Calculate Birth Day number: Birthday numerology API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -41,7 +41,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Bridge Numbers',
 				value: 'calculateBridgeNumbers',
 				action: 'Calculate bridge numbers',
-				description: 'Calculate Bridge Numbers: Harmonize different aspects of personality',
+				description: 'Calculate Bridge Numbers: Numerology bridge numbers API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -53,7 +53,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Business Name',
 				value: 'calculateBusinessName',
 				action: 'Calculate business name',
-				description: 'Business name numerology: Chaldean brand name analysis and lucky numbers',
+				description: 'Calculate business name numerology: Brand name numerology API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -65,7 +65,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Chaldean',
 				value: 'calculateChaldean',
 				action: 'Calculate chaldean',
-				description: 'Chaldean numerology name reading: Destiny, compound number, planetary ruler',
+				description: 'Calculate Chaldean numerology: Chaldean name number calculator API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -77,7 +77,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Dual',
 				value: 'calculateDual',
 				action: 'Calculate dual',
-				description: 'Dual numerology: Pythagorean and Chaldean name numbers in one call',
+				description: 'Calculate dual numerology: Pythagorean and Chaldean name number API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -89,7 +89,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Expression',
 				value: 'calculateExpression',
 				action: 'Calculate expression',
-				description: 'Calculate Expression number: Natural talents and life goals',
+				description: 'Calculate Expression number: Destiny number calculator API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -101,7 +101,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Life Path',
 				value: 'calculateLifePath',
 				action: 'Calculate life path',
-				description: 'Calculate Life Path number: Most important numerology calculation',
+				description: 'Calculate Life Path number: Calculator and meaning API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -113,7 +113,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Maturity',
 				value: 'calculateMaturity',
 				action: 'Calculate maturity',
-				description: 'Calculate Maturity number: Who you become in later life',
+				description: 'Calculate Maturity number: Realization number numerology API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -125,7 +125,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Num Compatibility',
 				value: 'calculateNumCompatibility',
 				action: 'Calculate num compatibility',
-				description: 'Calculate Compatibility: Relationship dynamics between two people',
+				description: 'Calculate numerology compatibility: Love match scoring API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -137,7 +137,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Personal Day',
 				value: 'calculatePersonalDay',
 				action: 'Calculate personal day',
-				description: 'Calculate Personal Day: Daily personalized numerology forecast',
+				description: 'Calculate Personal Day: Daily numerology forecast API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -149,7 +149,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Personal Month',
 				value: 'calculatePersonalMonth',
 				action: 'Calculate personal month',
-				description: 'Calculate Personal Month: Monthly numerology forecast',
+				description: 'Calculate Personal Month: Monthly numerology forecast API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -161,7 +161,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Personal Year',
 				value: 'calculatePersonalYear',
 				action: 'Calculate personal year',
-				description: 'Calculate Personal Year: Annual cycle and forecast for current year',
+				description: 'Calculate Personal Year: Personal Year number forecast API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -173,7 +173,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Personality',
 				value: 'calculatePersonality',
 				action: 'Calculate personality',
-				description: 'Calculate Personality number: How others perceive you',
+				description: 'Calculate Personality number: Outer personality numerology API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -185,7 +185,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Calculate Soul Urge',
 				value: 'calculateSoulUrge',
 				action: 'Calculate soul urge',
-				description: 'Calculate Soul Urge number: Inner motivations and desires',
+				description: 'Calculate Soul Urge number: Heart Desire number calculator API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -197,7 +197,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Check Karmic Debt',
 				value: 'checkKarmicDebt',
 				action: 'Check karmic debt',
-				description: 'Detect Karmic Debt numbers: Past life challenges (13, 14, 16, 19)',
+				description: 'Detect Karmic Debt numbers: Karmic debt 13, 14, 16, 19 API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -209,7 +209,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Generate Numerology Chart',
 				value: 'generateNumerologyChart',
 				action: 'Generate numerology chart',
-				description: 'Generate Complete Numerology Chart: Full profile analysis',
+				description: 'Generate numerology chart: Complete numerology reading API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -221,7 +221,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Get Compound Number',
 				value: 'getCompoundNumber',
 				action: 'Get compound number',
-				description: 'Compound number meaning: Cheiro Chaldean interpretation 10 to 52',
+				description: 'Get compound number meaning: Chaldean compound numbers 10 to 52 API',
 				routing: {
 					request: {
 						method: 'GET',
@@ -233,7 +233,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Get Daily Number',
 				value: 'getDailyNumber',
 				action: 'Get daily number',
-				description: 'Get daily numerology number: Number of the Day with interpretation',
+				description: 'Get daily numerology number: Number of the Day API',
 				routing: {
 					request: {
 						method: 'POST',
@@ -245,7 +245,7 @@ export const numerologyDescription: INodeProperties[] = [
 				name: 'Get Number Meaning',
 				value: 'getNumberMeaning',
 				action: 'Get number meaning',
-				description: 'Get Number Meaning: Interpretation for any number 1-9, 11, 22, 33',
+				description: 'Get number meaning: Numerology number meanings API',
 				routing: {
 					request: {
 						method: 'GET',
@@ -263,7 +263,8 @@ export const numerologyDescription: INodeProperties[] = [
 		default: '',
 		placeholder: 'e.g. John William Smith',
 		required: true,
-		description: 'Full birth name to analyze for missing numbers',
+		description:
+			'Full birth name to analyze for missing numbers. A name in any script is converted to Latin letters before it is counted, Cyrillic and Greek as the passport spelling and accents folded to the base letter, and the calculation lists the letters counted.',
 		routing: {
 			send: {
 				type: 'body',
@@ -451,7 +452,7 @@ export const numerologyDescription: INodeProperties[] = [
 		placeholder: 'e.g. John William Smith',
 		required: true,
 		description:
-			'Full legal birth name as it appears on the birth certificate. Used to calculate Expression, Soul Urge, and Personality numbers.',
+			'Full birth name as it appears on the birth certificate, first, middle and last names separated by spaces. Used to calculate the Expression, Soul Urge and Personality numbers.',
 		routing: {
 			send: {
 				type: 'body',
@@ -616,7 +617,8 @@ export const numerologyDescription: INodeProperties[] = [
 		default: '',
 		placeholder: 'e.g. Ford',
 		required: true,
-		description: 'The business or brand name to evaluate',
+		description:
+			'The business or brand name to evaluate. A name in any script is converted to Latin letters before it is counted, Cyrillic and Greek as the passport spelling and accents folded to the base letter, and the calculation lists the letters counted.',
 		routing: {
 			send: {
 				type: 'body',
@@ -801,7 +803,8 @@ export const numerologyDescription: INodeProperties[] = [
 		default: '',
 		placeholder: 'e.g. David',
 		required: true,
-		description: 'The name to analyze in both systems',
+		description:
+			'The name to analyze in both systems. A name in any script is converted to Latin letters before it is counted, Cyrillic and Greek as the passport spelling and accents folded to the base letter, and the calculation lists the letters counted.',
 		routing: {
 			send: {
 				type: 'body',
@@ -893,7 +896,8 @@ export const numerologyDescription: INodeProperties[] = [
 		default: '',
 		placeholder: 'e.g. John William Smith',
 		required: true,
-		description: 'Full birth name (first, middle, last)',
+		description:
+			'Full birth name (first, middle, last). A name in any script is converted to Latin letters before it is counted, Cyrillic and Greek as the passport spelling and accents folded to the base letter, and the calculation lists the letters counted.',
 		routing: {
 			send: {
 				type: 'body',
@@ -1177,7 +1181,7 @@ export const numerologyDescription: INodeProperties[] = [
 				default: '',
 				placeholder: 'e.g. John William Smith',
 				description:
-					'Full birth name to calculate Expression number automatically. Use instead of passing expression directly.',
+					'Full birth name to calculate the Expression number automatically. Use instead of passing expression directly.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1533,7 +1537,8 @@ export const numerologyDescription: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				placeholder: 'e.g. 2026-04-04',
-				description: 'Target date in YYYY-MM-DD format. Defaults to today (UTC).',
+				description:
+					'Target date in YYYY-MM-DD format, in the years 100 to 2100. Defaults to today (UTC).',
 				routing: {
 					send: {
 						type: 'body',
@@ -1669,7 +1674,8 @@ export const numerologyDescription: INodeProperties[] = [
 					minValue: 1,
 					maxValue: 12,
 				},
-				description: 'Target calendar month to forecast (1-12, defaults to current month)',
+				description:
+					'Target calendar month to forecast (1 to 12). Defaults to the current UTC month.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1686,7 +1692,7 @@ export const numerologyDescription: INodeProperties[] = [
 					minValue: 100,
 					maxValue: 2100,
 				},
-				description: 'Target year for calculation (defaults to current year)',
+				description: 'Target year. Defaults to the current UTC year.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1822,7 +1828,8 @@ export const numerologyDescription: INodeProperties[] = [
 					minValue: 100,
 					maxValue: 2100,
 				},
-				description: 'Year to calculate (defaults to current year)',
+				description:
+					'Year to forecast. Defaults to the current UTC year; the Personal Year turns over on 1 January.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1839,7 +1846,8 @@ export const numerologyDescription: INodeProperties[] = [
 		default: '',
 		placeholder: 'e.g. John William Smith',
 		required: true,
-		description: 'Full birth name (consonants will be extracted)',
+		description:
+			'Full birth name. Its consonants give the Personality number, so a name with none is refused.',
 		routing: {
 			send: {
 				type: 'body',
@@ -1931,7 +1939,8 @@ export const numerologyDescription: INodeProperties[] = [
 		default: '',
 		placeholder: 'e.g. John William Smith',
 		required: true,
-		description: 'Full birth name (vowels will be extracted)',
+		description:
+			'Full birth name. Its vowels A, E, I, O and U give the Soul Urge, so a name with none is refused.',
 		routing: {
 			send: {
 				type: 'body',
@@ -2052,7 +2061,8 @@ export const numerologyDescription: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				placeholder: 'e.g. John William Smith',
-				description: 'Full birth name (checks Expression, Soul Urge, Personality)',
+				description:
+					'Full birth name (checks Expression, Soul Urge, Personality). A name in any script is converted to Latin letters before it is counted, Cyrillic and Greek as the passport spelling and accents folded to the base letter, and the calculation lists the letters counted.',
 				routing: {
 					send: {
 						type: 'body',
@@ -2160,7 +2170,7 @@ export const numerologyDescription: INodeProperties[] = [
 		placeholder: 'e.g. John William Smith',
 		required: true,
 		description:
-			'Full birth name as it appears on the birth certificate. Used for all letter-based Pythagorean numerology calculations including Expression, Soul Urge, Personality, and Karmic Lessons.',
+			'Full birth name as it appears on the birth certificate. Used for every letter-based number in the chart: Expression, Soul Urge, Personality, Karmic Lessons, Hidden Passion, Subconscious Self and the special letters.',
 		routing: {
 			send: {
 				type: 'body',
@@ -2269,7 +2279,8 @@ export const numerologyDescription: INodeProperties[] = [
 					minValue: 100,
 					maxValue: 2100,
 				},
-				description: 'Year for Personal Year calculation (defaults to current year)',
+				description:
+					'Calendar year for the Personal Year, defaults to the current UTC year. It moves the Personal Year only: the nested personalMonth and maturityStatus.currentAge always read the current UTC date.',
 				routing: {
 					send: {
 						type: 'body',

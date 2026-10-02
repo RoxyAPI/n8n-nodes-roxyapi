@@ -338,28 +338,28 @@ Vastu Shastra API for directional home and plot analysis: entrance padas with th
 
 ### Numerology
 
-Numerology API to calculate life path, expression, soul urge, personality, and maturity numbers, with Pinnacle and Challenge life-phase timing, Hidden Passion, Subconscious Self, and Cornerstone and Capstone name analysis.
+Numerology API for life path numbers, complete numerology charts and compatibility, in both Pythagorean and Chaldean numerology.
 
-- **Calculate Life Path**: Calculate Life Path number: Most important numerology calculation
-- **Calculate Expression**: Calculate Expression number: Natural talents and life goals
-- **Calculate Bridge Numbers**: Calculate Bridge Numbers: Harmonize different aspects of personality
-- **Calculate Soul Urge**: Calculate Soul Urge number: Inner motivations and desires
-- **Calculate Personality**: Calculate Personality number: How others perceive you
-- **Calculate Birth Day**: Calculate Birth Day number: Special talents from day of birth
-- **Calculate Maturity**: Calculate Maturity number: Who you become in later life
-- **Analyze Karmic Lessons**: Analyze Karmic Lessons: Life lessons from missing numbers
-- **Check Karmic Debt**: Detect Karmic Debt numbers: Past life challenges (13, 14, 16, 19)
-- **Calculate Personal Day**: Calculate Personal Day: Daily personalized numerology forecast
-- **Calculate Personal Month**: Calculate Personal Month: Monthly numerology forecast
-- **Calculate Personal Year**: Calculate Personal Year: Annual cycle and forecast for current year
-- **Calculate Num Compatibility**: Calculate Compatibility: Relationship dynamics between two people
-- **Generate Numerology Chart**: Generate Complete Numerology Chart: Full profile analysis
-- **Get Number Meaning**: Get Number Meaning: Interpretation for any number 1-9, 11, 22, 33
-- **Get Daily Number**: Get daily numerology number: Number of the Day with interpretation
-- **Calculate Chaldean**: Chaldean numerology name reading: Destiny, compound number, planetary ruler
-- **Get Compound Number**: Compound number meaning: Cheiro Chaldean interpretation 10 to 52
-- **Calculate Dual**: Dual numerology: Pythagorean and Chaldean name numbers in one call
-- **Calculate Business Name**: Business name numerology: Chaldean brand name analysis and lucky numbers
+- **Calculate Life Path**: Calculate Life Path number: Calculator and meaning API
+- **Calculate Expression**: Calculate Expression number: Destiny number calculator API
+- **Calculate Bridge Numbers**: Calculate Bridge Numbers: Numerology bridge numbers API
+- **Calculate Soul Urge**: Calculate Soul Urge number: Heart Desire number calculator API
+- **Calculate Personality**: Calculate Personality number: Outer personality numerology API
+- **Calculate Birth Day**: Calculate Birth Day number: Birthday numerology API
+- **Calculate Maturity**: Calculate Maturity number: Realization number numerology API
+- **Analyze Karmic Lessons**: Analyze Karmic Lessons: Missing numbers numerology API
+- **Check Karmic Debt**: Detect Karmic Debt numbers: Karmic debt 13, 14, 16, 19 API
+- **Calculate Personal Day**: Calculate Personal Day: Daily numerology forecast API
+- **Calculate Personal Month**: Calculate Personal Month: Monthly numerology forecast API
+- **Calculate Personal Year**: Calculate Personal Year: Personal Year number forecast API
+- **Calculate Num Compatibility**: Calculate numerology compatibility: Love match scoring API
+- **Generate Numerology Chart**: Generate numerology chart: Complete numerology reading API
+- **Get Number Meaning**: Get number meaning: Numerology number meanings API
+- **Get Daily Number**: Get daily numerology number: Number of the Day API
+- **Calculate Chaldean**: Calculate Chaldean numerology: Chaldean name number calculator API
+- **Get Compound Number**: Get compound number meaning: Chaldean compound numbers 10 to 52 API
+- **Calculate Dual**: Calculate dual numerology: Pythagorean and Chaldean name number API
+- **Calculate Business Name**: Calculate business name numerology: Brand name numerology API
 
 ### Kabbalah
 
