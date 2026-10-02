@@ -256,10 +256,10 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -332,7 +332,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'split-zi',
 				description:
-					'Which instant starts the sexagenary DAY, which only matters for a birth between 23:00 and 23:59. "midnight" is the classical position of the Ming compendium San Ming Tong Hui: the day turns at 00:00 and 23:00 to 23:59 is the late zi hour of the day that is ending, so the hour stem is taken from...',
+					'Which instant starts the sexagenary DAY, which only matters for a birth between 23:00 and 23:59',
 				routing: {
 					send: {
 						type: 'body',
@@ -360,7 +360,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'clock',
 				description:
-					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts...',
+					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here.',
 				routing: {
 					send: {
 						type: 'body',
@@ -477,7 +477,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'li-chun',
 				description:
-					'Which instant starts the sexagenary YEAR. "li-chun" is Beginning of Spring, around 4 February, and is the classical rule every BaZi text uses, so it is the default on this endpoint. "lunar-new-year" is the folk rule people mean when they say which animal they are, and it falls between late...',
+					'Which instant starts the sexagenary YEAR. "li-chun" is Beginning of Spring, around 4 February, and is the classical rule every BaZi text uses, so it is the default on this endpoint.',
 				routing: {
 					send: {
 						type: 'body',
@@ -651,10 +651,10 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -702,7 +702,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'split-zi',
 				description:
-					'Which instant starts the sexagenary DAY, which only matters for a birth between 23:00 and 23:59. "midnight" is the classical position of the Ming compendium San Ming Tong Hui: the day turns at 00:00 and 23:00 to 23:59 is the late zi hour of the day that is ending, so the hour stem is taken from...',
+					'Which instant starts the sexagenary DAY, which only matters for a birth between 23:00 and 23:59',
 				routing: {
 					send: {
 						type: 'body',
@@ -730,7 +730,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'clock',
 				description:
-					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts...',
+					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here.',
 				routing: {
 					send: {
 						type: 'body',
@@ -847,7 +847,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'li-chun',
 				description:
-					'Which instant starts the sexagenary YEAR. "li-chun" is Beginning of Spring, around 4 February, and is the classical rule every BaZi text uses, so it is the default on this endpoint. "lunar-new-year" is the folk rule people mean when they say which animal they are, and it falls between late...',
+					'Which instant starts the sexagenary YEAR. "li-chun" is Beginning of Spring, around 4 February, and is the classical rule every BaZi text uses, so it is the default on this endpoint.',
 				routing: {
 					send: {
 						type: 'body',
@@ -905,10 +905,10 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -1041,7 +1041,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'split-zi',
 				description:
-					'Which instant starts the sexagenary DAY, which only matters for a birth between 23:00 and 23:59. "midnight" is the classical position of the Ming compendium San Ming Tong Hui: the day turns at 00:00 and 23:00 to 23:59 is the late zi hour of the day that is ending, so the hour stem is taken from...',
+					'Which instant starts the sexagenary DAY, which only matters for a birth between 23:00 and 23:59',
 				routing: {
 					send: {
 						type: 'body',
@@ -1069,7 +1069,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'clock',
 				description:
-					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts...',
+					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1186,7 +1186,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'li-chun',
 				description:
-					'Which instant starts the sexagenary YEAR. "li-chun" is Beginning of Spring, around 4 February, and is the classical rule every BaZi text uses, so it is the default on this endpoint. "lunar-new-year" is the folk rule people mean when they say which animal they are, and it falls between late...',
+					'Which instant starts the sexagenary YEAR. "li-chun" is Beginning of Spring, around 4 February, and is the classical rule every BaZi text uses, so it is the default on this endpoint.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1513,10 +1513,10 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -1564,7 +1564,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'split-zi',
 				description:
-					'Which instant starts the sexagenary DAY, which only matters for a birth between 23:00 and 23:59. "midnight" is the classical position of the Ming compendium San Ming Tong Hui: the day turns at 00:00 and 23:00 to 23:59 is the late zi hour of the day that is ending, so the hour stem is taken from...',
+					'Which instant starts the sexagenary DAY, which only matters for a birth between 23:00 and 23:59',
 				routing: {
 					send: {
 						type: 'body',
@@ -1592,7 +1592,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'clock',
 				description:
-					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here. "local-mean" shifts...',
+					'Which clock the day boundary and the hour branch are read from, so a correction that carries a birth across midnight moves the day pillar with the hour. "clock" is civil time exactly as a birth certificate records it, which is what most calculators use and the default here.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1709,7 +1709,7 @@ export const chineseAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'li-chun',
 				description:
-					'Which instant starts the sexagenary YEAR. "li-chun" is Beginning of Spring, around 4 February, and is the classical rule every BaZi text uses, so it is the default on this endpoint. "lunar-new-year" is the folk rule people mean when they say which animal they are, and it falls between late...',
+					'Which instant starts the sexagenary YEAR. "li-chun" is Beginning of Spring, around 4 February, and is the classical rule every BaZi text uses, so it is the default on this endpoint.',
 				routing: {
 					send: {
 						type: 'body',

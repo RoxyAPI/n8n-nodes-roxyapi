@@ -729,7 +729,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1781,7 +1781,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -2040,7 +2040,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -2301,7 +2301,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -2530,7 +2530,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -2891,7 +2891,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -3156,7 +3156,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -3851,7 +3851,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -4405,7 +4405,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -4641,7 +4641,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -5151,7 +5151,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -5785,7 +5785,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -6115,7 +6115,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -6367,7 +6367,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -6526,7 +6526,7 @@ export const astrologyDescription: INodeProperties[] = [
 		placeholder: 'e.g. sun',
 		required: true,
 		description:
-			'Planet ID (lowercase, e.g., sun, moon, mercury) or display name (case-insensitive, e.g., Sun, MOON). Spaces, hyphens and underscores are interchangeable, so the two lunar nodes answer to north-node and south-node as well as to their IDs north node and south node, and Black Moon Lilith answers to...',
+			'Planet ID (lowercase, e.g., sun, moon, mercury) or display name (case-insensitive, e.g., Sun, MOON)',
 		displayOptions: {
 			show: {
 				resource: ['astrology'],
@@ -6920,7 +6920,7 @@ export const astrologyDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',

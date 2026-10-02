@@ -313,7 +313,7 @@ export const mesoamericanAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'gmt-584283',
 				description:
-					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions. "gmt-584283" is the commonly accepted constant and the...',
+					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions.',
 				routing: {
 					send: {
 						type: 'body',
@@ -337,7 +337,7 @@ export const mesoamericanAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'madrid-codex',
 				description:
-					'Which reading of the world direction and colour to serve for a day sign. The two published assignments differ by exactly one quarter turn on all twenty signs, so neither is a rounding of the other and a silent pick would be a school choice. "madrid-codex" is the codex reading and the default;...',
+					'Which reading of the world direction and colour to serve for a day sign. The two published assignments differ by exactly one quarter turn on all twenty signs, so neither is a rounding of the other and a silent pick would be a school choice.',
 				routing: {
 					send: {
 						type: 'body',
@@ -555,7 +555,7 @@ export const mesoamericanAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'gmt-584283',
 				description:
-					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions. "gmt-584283" is the commonly accepted constant and the...',
+					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions.',
 				routing: {
 					send: {
 						type: 'body',
@@ -658,7 +658,7 @@ export const mesoamericanAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'gmt-584283',
 				description:
-					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions. "gmt-584283" is the commonly accepted constant and the...',
+					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions.',
 				routing: {
 					send: {
 						type: 'body',
@@ -813,7 +813,7 @@ export const mesoamericanAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'gmt-584283',
 				description:
-					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions. "gmt-584283" is the commonly accepted constant and the...',
+					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions.',
 				routing: {
 					send: {
 						type: 'body',
@@ -897,7 +897,7 @@ export const mesoamericanAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'classic',
 				description:
-					'Which Haab day is read as the start of the year when naming its Year Bearer. Only four of the twenty day signs can ever carry a year, and which four depends entirely on this choice, so the three schools never agree. "classic" reads the seating of Pop and is the default, because it is the set...',
+					'Which Haab day is read as the start of the year when naming its Year Bearer. Only four of the twenty day signs can ever carry a year, and which four depends entirely on this choice, so the three schools never agree.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1284,7 +1284,7 @@ export const mesoamericanAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'gmt-584283',
 				description:
-					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions. "gmt-584283" is the commonly accepted constant and the...',
+					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions.',
 				routing: {
 					send: {
 						type: 'query',
@@ -1655,7 +1655,7 @@ export const mesoamericanAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'madrid-codex',
 				description:
-					'Which reading of the world direction and colour to serve for a day sign. The two published assignments differ by exactly one quarter turn on all twenty signs, so neither is a rounding of the other and a silent pick would be a school choice. "madrid-codex" is the codex reading and the default;...',
+					'Which reading of the world direction and colour to serve for a day sign. The two published assignments differ by exactly one quarter turn on all twenty signs, so neither is a rounding of the other and a silent pick would be a school choice.',
 				routing: {
 					send: {
 						type: 'query',
@@ -1758,7 +1758,7 @@ export const mesoamericanAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'gmt-584283',
 				description:
-					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions. "gmt-584283" is the commonly accepted constant and the...',
+					'Which correlation constant ties the day count to a civil date. This is the single choice that shifts every value in the response, so it is a parameter rather than a hidden default, and the resolved value comes back under conventions.',
 				routing: {
 					send: {
 						type: 'query',
@@ -2286,7 +2286,7 @@ export const mesoamericanAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'madrid-codex',
 				description:
-					'Which reading of the world direction and colour to serve for a day sign. The two published assignments differ by exactly one quarter turn on all twenty signs, so neither is a rounding of the other and a silent pick would be a school choice. "madrid-codex" is the codex reading and the default;...',
+					'Which reading of the world direction and colour to serve for a day sign. The two published assignments differ by exactly one quarter turn on all twenty signs, so neither is a rounding of the other and a silent pick would be a school choice.',
 				routing: {
 					send: {
 						type: 'query',

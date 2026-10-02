@@ -214,10 +214,10 @@ export const humanDesignDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -355,7 +355,7 @@ export const humanDesignDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -414,10 +414,10 @@ export const humanDesignDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -555,7 +555,7 @@ export const humanDesignDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -729,10 +729,10 @@ export const humanDesignDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -870,7 +870,7 @@ export const humanDesignDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1023,10 +1023,10 @@ export const humanDesignDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -1164,7 +1164,7 @@ export const humanDesignDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1223,10 +1223,10 @@ export const humanDesignDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -1364,7 +1364,7 @@ export const humanDesignDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1423,10 +1423,10 @@ export const humanDesignDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -1564,7 +1564,7 @@ export const humanDesignDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1623,10 +1623,10 @@ export const humanDesignDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -1764,7 +1764,7 @@ export const humanDesignDescription: INodeProperties[] = [
 				],
 				default: 'true',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',

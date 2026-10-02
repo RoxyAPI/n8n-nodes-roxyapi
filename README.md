@@ -62,7 +62,7 @@ The calculations most products are built on, one row per domain:
 | Resource | Start with |
 |---|---|
 | Western Astrology | Generate Natal Chart, Get Daily Horoscope, Calculate Synastry, Get Current Moon Phase |
-| Vedic Astrology | Generate Birth Chart, Get Detailed Panchang, Get Current Dasha, Check Manglik Dosha, Calculate Gun Milan, Get Kp Ruling Planets |
+| Vedic Astrology | Generate Birth Chart, Get Detailed Panchang, Get Current Dasha, Check Manglik Dosha, Calculate Gun Milan, Get KP Ruling Planets |
 | Forecast | Forecast Transits, Generate Timeline |
 | Human Design | Generate Bodygraph, Calculate Connection |
 | Chinese Astrology | Generate Bazi Chart, Calculate Zodiac Animal, Get Almanac Day |
@@ -200,17 +200,17 @@ Vedic astrology (Jyotish) and KP API for kundli generation with the sixteen Shod
 - **List Yogas**: List all planetary yogas: 301 entry Vedic Yoga Glossary
 - **Get Yoga**: Get yoga details by ID: Vedic Yoga Glossary Entry
 - **Detect Yogas**: Detect classical Vedic yogas in a birth chart
-- **Get Kp Ayanamsa**: Get KP-Newcomb ayanamsa: Dynamic daily calculation
-- **Get Kp Planets**: Get KP planetary positions with sub-lords
-- **Get Kp Cusps**: Get KP Placidus house cusps with sub-lords
-- **Generate Kp Chart**: Generate complete KP birth chart
-- **Get Kp Ruling Planets**: Get KP ruling planets with optional significators
-- **Get Kp Ruling Interval**: Get KP ruling planets with significators at intervals
-- **Get Kp Sublord Changes**: Find KP sublord changes
-- **Get Kp Rasi Changes**: Find KP rasi ingress times
-- **Get Kp Planets Interval**: Get KP planets at time intervals
-- **Cast Kp Horary Chart**: Cast a KP horary (Prashna) chart from a number 1-249: KP Horary API
-- **Get Kp Daily Finance**: Daily finance score from four KP sub lord layers: KP Daily Finance API
+- **Get KP Ayanamsa**: Get KP-Newcomb ayanamsa: Dynamic daily calculation
+- **Get KP Planets**: Get KP planetary positions with sub-lords
+- **Get KP Cusps**: Get KP Placidus house cusps with sub-lords
+- **Generate KP Chart**: Generate complete KP birth chart
+- **Get KP Ruling Planets**: Get KP ruling planets with optional significators
+- **Get KP Ruling Interval**: Get KP ruling planets with significators at intervals
+- **Get KP Sublord Changes**: Find KP sublord changes
+- **Get KP Rasi Changes**: Find KP rasi ingress times
+- **Get KP Planets Interval**: Get KP planets at time intervals
+- **Cast KP Horary Chart**: Cast a KP horary (Prashna) chart from a number 1-249: KP Horary API
+- **Get KP Daily Finance**: Daily finance score from four KP sub lord layers: KP Daily Finance API
 - **Calculate Drishti**: Get planetary aspects (Drishti): Mutual aspects between all planets
 - **Get Monthly Aspects**: Monthly Planetary Aspects: Major and minor aspect events for a month
 - **Get Lunar Aspects**: Monthly Lunar Aspects: Moon aspect events with all planets for a month
@@ -352,7 +352,7 @@ Numerology API for life path numbers, complete numerology charts and compatibili
 - **Calculate Personal Day**: Calculate Personal Day: Daily numerology forecast API
 - **Calculate Personal Month**: Calculate Personal Month: Monthly numerology forecast API
 - **Calculate Personal Year**: Calculate Personal Year: Personal Year number forecast API
-- **Calculate Num Compatibility**: Calculate numerology compatibility: Love match scoring API
+- **Calculate Numerology Compatibility**: Calculate numerology compatibility: Love match scoring API
 - **Generate Numerology Chart**: Generate numerology chart: Complete numerology reading API
 - **Get Number Meaning**: Get number meaning: Numerology number meanings API
 - **Get Daily Number**: Get daily numerology number: Number of the Day API
@@ -400,7 +400,7 @@ The most complete biorhythm API: 10 cycle types across 3 primary (physical, emot
 - **Get Reading**: Get biorhythm reading: Complete cycle analysis for any date
 - **Get Forecast**: Get biorhythm forecast: Multi-day cycle predictions with best and worst days
 - **Get Critical Days**: Find critical days: Zero crossing detection for any date range
-- **Calculate Bio Compatibility**: Calculate compatibility: Biorhythm alignment between two people
+- **Calculate Biorhythm Compatibility**: Calculate compatibility: Biorhythm alignment between two people
 - **Get Phases**: Get phase info: Lightweight cycle status for dashboards and widgets
 - **Get Daily Biorhythm**: Get daily biorhythm: Seeded reading for daily check-in features
 

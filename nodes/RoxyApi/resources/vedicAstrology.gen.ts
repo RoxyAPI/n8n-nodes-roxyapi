@@ -159,9 +159,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Cast Kp Horary Chart',
+				name: 'Cast KP Horary Chart',
 				value: 'castKpHoraryChart',
-				action: 'Cast kp horary chart',
+				action: 'Cast KP horary chart',
 				description: 'Cast a KP horary (Prashna) chart from a number 1-249: KP Horary API',
 				routing: {
 					request: {
@@ -243,9 +243,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Generate Kp Chart',
+				name: 'Generate KP Chart',
 				value: 'generateKpChart',
-				action: 'Generate kp chart',
+				action: 'Generate KP chart',
 				description: 'Generate complete KP birth chart',
 				routing: {
 					request: {
@@ -364,9 +364,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Kp Ayanamsa',
+				name: 'Get KP Ayanamsa',
 				value: 'getKpAyanamsa',
-				action: 'Get kp ayanamsa',
+				action: 'Get KP ayanamsa',
 				description: 'Get KP-Newcomb ayanamsa: Dynamic daily calculation',
 				routing: {
 					request: {
@@ -376,9 +376,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Kp Cusps',
+				name: 'Get KP Cusps',
 				value: 'getKpCusps',
-				action: 'Get kp cusps',
+				action: 'Get KP cusps',
 				description: 'Get KP Placidus house cusps with sub-lords',
 				routing: {
 					request: {
@@ -388,9 +388,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Kp Daily Finance',
+				name: 'Get KP Daily Finance',
 				value: 'getKpDailyFinance',
-				action: 'Get kp daily finance',
+				action: 'Get KP daily finance',
 				description: 'Daily finance score from four KP sub lord layers: KP Daily Finance API',
 				routing: {
 					request: {
@@ -400,9 +400,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Kp Planets',
+				name: 'Get KP Planets',
 				value: 'getKpPlanets',
-				action: 'Get kp planets',
+				action: 'Get KP planets',
 				description: 'Get KP planetary positions with sub-lords',
 				routing: {
 					request: {
@@ -412,9 +412,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Kp Planets Interval',
+				name: 'Get KP Planets Interval',
 				value: 'getKpPlanetsInterval',
-				action: 'Get kp planets interval',
+				action: 'Get KP planets interval',
 				description: 'Get KP planets at time intervals',
 				routing: {
 					request: {
@@ -424,9 +424,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Kp Rasi Changes',
+				name: 'Get KP Rasi Changes',
 				value: 'getKpRasiChanges',
-				action: 'Get kp rasi changes',
+				action: 'Get KP rasi changes',
 				description: 'Find KP rasi ingress times',
 				routing: {
 					request: {
@@ -436,9 +436,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Kp Ruling Interval',
+				name: 'Get KP Ruling Interval',
 				value: 'getKpRulingInterval',
-				action: 'Get kp ruling interval',
+				action: 'Get KP ruling interval',
 				description: 'Get KP ruling planets with significators at intervals',
 				routing: {
 					request: {
@@ -448,9 +448,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Kp Ruling Planets',
+				name: 'Get KP Ruling Planets',
 				value: 'getKpRulingPlanets',
-				action: 'Get kp ruling planets',
+				action: 'Get KP ruling planets',
 				description: 'Get KP ruling planets with optional significators',
 				routing: {
 					request: {
@@ -460,9 +460,9 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Get Kp Sublord Changes',
+				name: 'Get KP Sublord Changes',
 				value: 'getKpSublordChanges',
-				action: 'Get kp sublord changes',
+				action: 'Get KP sublord changes',
 				description: 'Find KP sublord changes',
 				routing: {
 					request: {
@@ -836,11 +836,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -854,7 +854,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1072,11 +1072,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -1090,7 +1090,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1252,11 +1252,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -1270,7 +1270,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1311,7 +1311,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -1512,11 +1512,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -1530,7 +1530,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1571,7 +1571,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -1772,11 +1772,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -1790,7 +1790,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1887,7 +1887,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'eight',
 				description:
-					'Which Chara Karaka scheme to rank. "eight" includes Rahu, counting its degree in reverse because it moves retrograde, and returns eight offices including Pitrikaraka. "seven" ranks only the seven classical grahas and drops Pitrikaraka. Ketu is excluded from both, since it always mirrors the Rahu...',
+					'Which Chara Karaka scheme to rank. "eight" includes Rahu, counting its degree in reverse because it moves retrograde, and returns eight offices including Pitrikaraka.',
 				routing: {
 					send: {
 						type: 'body',
@@ -1982,11 +1982,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -2000,7 +2000,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -2208,7 +2208,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'sidereal',
 				description:
-					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. "tropical" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to "sidereal".',
+					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -2303,11 +2303,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -2321,7 +2321,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -2473,11 +2473,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -2491,7 +2491,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -2838,11 +2838,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -2856,7 +2856,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -3102,7 +3102,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'sidereal',
 				description:
-					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. "tropical" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to "sidereal".',
+					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -3286,11 +3286,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -3304,7 +3304,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'kp-newcomb',
 				description:
-					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula (most common for KP). "kp-old" uses the Krishnamurti original table. "lahiri" uses Lahiri/Chitrapaksha ayanamsa matching most traditional Vedic software. "raman" uses the B.V. Raman ayanamsa, about 1.45...',
+					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula (most common for KP).',
 				routing: {
 					send: {
 						type: 'body',
@@ -3345,7 +3345,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -3425,7 +3425,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -3570,11 +3570,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -3588,7 +3588,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -3806,11 +3806,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -3824,7 +3824,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -4042,11 +4042,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -4060,7 +4060,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -4278,11 +4278,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -4296,7 +4296,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -4528,11 +4528,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -4546,7 +4546,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -4587,7 +4587,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -4657,7 +4657,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'boolean',
 				default: false,
 				description:
-					'Whether to also return Uranus, Neptune and Pluto, under the Sanskrit names Arun, Varun and Yam that Indian software prints for them. They arrive in a separate modernPlanets array, NOT inside meta, because classical Jyotish is defined over nine grahas: the moderns rule no sign, so they have no...',
+					'Whether to also return Uranus, Neptune and Pluto, under the Sanskrit names Arun, Varun and Yam that Indian software prints for them',
 				routing: {
 					send: {
 						type: 'body',
@@ -4822,11 +4822,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -4840,7 +4840,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -5055,11 +5055,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -5073,7 +5073,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'kp-newcomb',
 				description:
-					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula (most common for KP). "kp-old" uses the Krishnamurti original table. "lahiri" uses Lahiri/Chitrapaksha ayanamsa matching most traditional Vedic software. "raman" uses the B.V. Raman ayanamsa, about 1.45...',
+					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula (most common for KP).',
 				routing: {
 					send: {
 						type: 'body',
@@ -5114,7 +5114,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -5194,7 +5194,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -5339,11 +5339,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -5357,7 +5357,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -6018,11 +6018,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -6036,7 +6036,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. "kp-newcomb" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. "kp-old"...',
+					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -6092,7 +6092,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -6172,7 +6172,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field. "mean" uses the smooth mean node (traditional default). "true" uses the osculating node, which swings up to 1.5 degrees either side of mean over a...',
+					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field.',
 				routing: {
 					send: {
 						type: 'body',
@@ -6426,7 +6426,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'sidereal',
 				description:
-					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. "tropical" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to "sidereal".',
+					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -6893,11 +6893,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -6911,7 +6911,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'kp-newcomb',
 				description:
-					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula (most common for KP). "kp-old" uses the Krishnamurti original table. "lahiri" uses Lahiri/Chitrapaksha ayanamsa matching most traditional Vedic software. "raman" uses the B.V. Raman ayanamsa, about 1.45...',
+					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula (most common for KP).',
 				routing: {
 					send: {
 						type: 'body',
@@ -6952,7 +6952,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -7148,11 +7148,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'options',
 				options: [
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -7166,7 +7166,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'kp-newcomb',
 				description:
-					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. "kp-old" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. "lahiri" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional...',
+					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -7235,7 +7235,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -7407,11 +7407,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -7425,7 +7425,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'kp-newcomb',
 				description:
-					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula (most common for KP). "kp-old" uses the Krishnamurti original table. "lahiri" uses Lahiri/Chitrapaksha ayanamsa matching most traditional Vedic software. "raman" uses the B.V. Raman ayanamsa, about 1.45...',
+					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula (most common for KP).',
 				routing: {
 					send: {
 						type: 'body',
@@ -7466,7 +7466,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -7630,11 +7630,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'options',
 				options: [
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -7648,7 +7648,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'kp-newcomb',
 				description:
-					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. "kp-old" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. "lahiri" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional...',
+					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -7672,7 +7672,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -7811,11 +7811,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'options',
 				options: [
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -7829,7 +7829,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'kp-newcomb',
 				description:
-					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. "kp-old" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. "lahiri" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional...',
+					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -7853,7 +7853,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -7868,7 +7868,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				default: '',
 				placeholder: 'e.g. America/New_York or 5.5',
 				description:
-					'IANA name (e.g. "America/New_York", "Europe/London"), a fixed offset like "+05:30", OR decimal hours from UTC. One offset is taken from startDate (DST-correct for that date) and used for the whole range, so a window crossing a daylight-saving change is read on the earlier offset throughout; send...',
+					'IANA name (e.g. "America/New_York", "Europe/London"), a fixed offset like "+05:30", OR decimal hours from UTC',
 				routing: {
 					send: {
 						type: 'body',
@@ -8017,11 +8017,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'options',
 				options: [
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -8035,7 +8035,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'kp-newcomb',
 				description:
-					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. "kp-old" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. "lahiri" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional...',
+					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -8059,7 +8059,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -8139,7 +8139,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -8289,7 +8289,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -8369,7 +8369,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -8508,11 +8508,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				type: 'options',
 				options: [
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -8526,7 +8526,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'kp-newcomb',
 				description:
-					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology. "kp-old" uses the Krishnamurti original table from KP Reader-1 with constant precession rate. "lahiri" uses Lahiri/Chitrapaksha ayanamsa, matching most traditional...',
+					'Ayanamsa system for sidereal conversion. "kp-newcomb" uses the KP-Newcomb dynamic formula, the most common choice for KP astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -8550,7 +8550,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct. Neither is more correct and...',
+					'Lunar node convention. "mean" is the smoothed average node, which always moves retrograde; "true" is the osculating node, which tracks the real perturbed node, oscillates up to about 1.5 degrees either side of the mean on a 173-day cycle, and can briefly turn direct.',
 				routing: {
 					send: {
 						type: 'body',
@@ -8565,7 +8565,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				default: '',
 				placeholder: 'e.g. America/New_York or 5.5',
 				description:
-					'IANA name (e.g. "America/New_York", "Europe/London"), a fixed offset like "+05:30", OR decimal hours from UTC. One offset is taken from startDate (DST-correct for that date) and used for the whole range, so a window crossing a daylight-saving change is read on the earlier offset throughout; send...',
+					'IANA name (e.g. "America/New_York", "Europe/London"), a fixed offset like "+05:30", OR decimal hours from UTC',
 				routing: {
 					send: {
 						type: 'body',
@@ -8605,7 +8605,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'sidereal',
 				description:
-					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. "tropical" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to "sidereal".',
+					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -8841,11 +8841,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -8859,7 +8859,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. "kp-newcomb" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. "kp-old"...',
+					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -8900,7 +8900,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -8980,7 +8980,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field. "mean" uses the smooth mean node (traditional default). "true" uses the osculating node, which swings up to 1.5 degrees either side of mean over a...',
+					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field.',
 				routing: {
 					send: {
 						type: 'body',
@@ -9049,7 +9049,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'sidereal',
 				description:
-					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. "tropical" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to "sidereal".',
+					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -9195,7 +9195,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'sidereal',
 				description:
-					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. "tropical" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to "sidereal".',
+					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -9448,7 +9448,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'sidereal',
 				description:
-					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology. "tropical" (Sayana) uses raw ecliptic longitude matching Western astrology. Defaults to "sidereal".',
+					'Coordinate system for longitude output. "sidereal" (Nirayana) uses Lahiri ayanamsa, the standard for Vedic astrology.',
 				routing: {
 					send: {
 						type: 'body',
@@ -9881,11 +9881,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -9899,7 +9899,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -10327,11 +10327,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -10345,7 +10345,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. "kp-newcomb" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. "kp-old"...',
+					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -10386,7 +10386,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -10466,7 +10466,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field. "mean" uses the smooth mean node (traditional default). "true" uses the osculating node, which swings up to 1.5 degrees either side of mean over a...',
+					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field.',
 				routing: {
 					send: {
 						type: 'body',
@@ -10731,11 +10731,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -10749,7 +10749,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. "kp-newcomb" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. "kp-old"...',
+					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -10790,7 +10790,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -10870,7 +10870,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field. "mean" uses the smooth mean node (traditional default). "true" uses the osculating node, which swings up to 1.5 degrees either side of mean over a...',
+					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field.',
 				routing: {
 					send: {
 						type: 'body',
@@ -11322,11 +11322,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -11340,7 +11340,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. "kp-newcomb" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. "kp-old"...',
+					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -11381,7 +11381,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -11461,7 +11461,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field. "mean" uses the smooth mean node (traditional default). "true" uses the osculating node, which swings up to 1.5 degrees either side of mean over a...',
+					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field.',
 				routing: {
 					send: {
 						type: 'body',
@@ -11673,11 +11673,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -11691,7 +11691,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default. "kp-newcomb" uses the KP-Newcomb dynamic formula, matching Krishnamurti Paddhati software. "kp-old"...',
+					'Ayanamsa system used to place the birth Moon in its nakshatra, which sets every dasha start and end date. "lahiri" uses Lahiri/Chitrapaksha, the traditional Vedic standard, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -11732,7 +11732,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -11812,7 +11812,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field. "mean" uses the smooth mean node (traditional default). "true" uses the osculating node, which swings up to 1.5 degrees either side of mean over a...',
+					'Lunar node type for Rahu and Ketu, used ONLY when "significators" is true. Dasha dates themselves come from the Moon and never move with this field.',
 				routing: {
 					send: {
 						type: 'body',
@@ -11971,11 +11971,11 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -11989,7 +11989,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default. "raman" is the B.V. Raman ayanamsa from Hindu Predictive Astrology, about 1.45 degrees below Lahiri. "kp-newcomb" and "kp-old" are the two...',
+					'Sidereal frame (ayanamsa) the chart is cast in. "lahiri" is Lahiri/Chitrapaksha, the traditional Vedic standard used by most software, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -12171,7 +12171,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'general',
 				description:
-					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on). "finance" gives the money reading of the same twelve bhavas, so house 2 returns income and savings, 5 speculation and risk appetite, 8 sudden...',
+					'Which signification vocabulary the houseThemes map returns. "general" gives the classical bhava significations (self, wealth, siblings, home, and so on).',
 				routing: {
 					send: {
 						type: 'query',
@@ -12251,7 +12251,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				],
 				default: 'mean',
 				description:
-					'Lunar node type for Rahu and Ketu. "mean" uses the smooth mean node, which is the traditional Vedic default and what printed panchangs use. "true" uses the osculating node, which swings up to 1.5 degrees either side of mean and can therefore move a node into a different rashi and change its...',
+					'Lunar node type for Rahu and Ketu. "mean" uses the smooth mean node, which is the traditional Vedic default and what printed panchangs use.',
 				routing: {
 					send: {
 						type: 'body',

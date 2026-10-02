@@ -14,9 +14,9 @@ export const biorhythmDescription: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'Calculate Bio Compatibility',
+				name: 'Calculate Biorhythm Compatibility',
 				value: 'calculateBioCompatibility',
-				action: 'Calculate bio compatibility',
+				action: 'Calculate biorhythm compatibility',
 				description: 'Calculate compatibility: Biorhythm alignment between two people',
 				routing: {
 					request: {

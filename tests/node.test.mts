@@ -104,6 +104,13 @@ test('every UI string is in the Latin script, as n8n verification requires', () 
 	assert.deepEqual(offending, []);
 });
 
+test('a placeholder offering two examples offers two different ones', () => {
+	const placeholders =
+		JSON.stringify(description).match(/"placeholder":"e\.g\. [^"]+ or [^"]+"/g) ?? [];
+	assert.ok(placeholders.length > 0);
+	for (const p of placeholders) assert.doesNotMatch(p, /e\.g\. (.+) or \1"/);
+});
+
 test('requests go to the spec server and carry the client tag of this release', () => {
 	assert.equal(description.requestDefaults.baseURL, spec.servers?.[0].url);
 	assert.equal(description.requestDefaults.headers['X-SDK-Client'], `roxy-sdk-n8n/${pkg.version}`);

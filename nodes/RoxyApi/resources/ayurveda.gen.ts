@@ -231,11 +231,11 @@ export const ayurvedaDescription: INodeProperties[] = [
 						value: 'custom',
 					},
 					{
-						name: 'Kp Newcomb',
+						name: 'KP Newcomb',
 						value: 'kp-newcomb',
 					},
 					{
-						name: 'Kp Old',
+						name: 'KP Old',
 						value: 'kp-old',
 					},
 					{
@@ -249,7 +249,7 @@ export const ayurvedaDescription: INodeProperties[] = [
 				],
 				default: 'lahiri',
 				description:
-					'Sidereal frame the chart is cast in. "lahiri" is the traditional Vedic standard used by most software and is the default. "raman" sits about 1.45 degrees below it. "kp-newcomb" and "kp-old" are the two Krishnamurti Paddhati frames. "custom" takes your own value in degrees via ayanamsaValue. The...',
+					'Sidereal frame the chart is cast in. "lahiri" is the traditional Vedic standard used by most software and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -346,7 +346,7 @@ export const ayurvedaDescription: INodeProperties[] = [
 				],
 				default: 'satyacharya',
 				description:
-					'Which classical sign table the rising sign and the Moon sign are read through. "satyacharya" is the twelve-sign extract appended to Brihat Jataka 18.20, carried in two independent public-domain translations that agree on all twelve rows, and is the default. "bphs" is the Brihat Parasara Hora...',
+					'Which classical sign table the rising sign and the Moon sign are read through. "satyacharya" is the twelve-sign extract appended to Brihat Jataka 18.20, carried in two independent public-domain translations that agree on all twelve rows, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -626,7 +626,7 @@ export const ayurvedaDescription: INodeProperties[] = [
 				],
 				default: 'sunrise-anchored',
 				description:
-					'How the six dosha periods are cut. "sunrise-anchored" divides the actual day and the actual night at this place into thirds, which is the division the frame chapter states, and is the default. "clock-hours" is the modern grid of six four-hour blocks from six in the morning; no classical text...',
+					'How the six dosha periods are cut. "sunrise-anchored" divides the actual day and the actual night at this place into thirds, which is the division the frame chapter states, and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -695,9 +695,9 @@ export const ayurvedaDescription: INodeProperties[] = [
 				name: 'timezone',
 				type: 'string',
 				default: '',
-				placeholder: 'e.g. America/New_York or Europe/London',
+				placeholder: 'e.g. Europe/London or -5',
 				description:
-					'Timezone as an IANA name such as "Europe/London", or as decimal hours from UTC such as 5.5. An IANA name is resolved to the offset in force on the requested date, and on the clock-hour grid at the local hour each block opens, so on a daylight-saving change every block keeps its printed hour and...',
+					'Timezone as an IANA name such as "Europe/London", or as decimal hours from UTC such as 5.5',
 				routing: {
 					send: {
 						type: 'body',
@@ -938,7 +938,7 @@ export const ayurvedaDescription: INodeProperties[] = [
 				],
 				default: 'sayana',
 				description:
-					'Which zodiac the solar-month boundaries are measured in. "sayana" is the tropical reading, which is what published almanacs use for seasons and is the default. "nirayana" is the sidereal reading in the Lahiri frame, which runs about 24 days later. The gap is the size of the ayanamsa, so near a...',
+					'Which zodiac the solar-month boundaries are measured in. "sayana" is the tropical reading, which is what published almanacs use for seasons and is the default.',
 				routing: {
 					send: {
 						type: 'body',
@@ -962,7 +962,7 @@ export const ayurvedaDescription: INodeProperties[] = [
 				],
 				default: 'sutrasthana-6',
 				description:
-					'Which six-season division the year is cut into. "sutrasthana-6" is the standard set of sisira, vasanta, grisma, varsa, sarad and hemanta, and is the default. "vimana-8" is the alternate division in which three seasons of extreme character alternate with three of moderate character and pravrt,...',
+					'Which six-season division the year is cut into. "sutrasthana-6" is the standard set of sisira, vasanta, grisma, varsa, sarad and hemanta, and is the default.',
 				routing: {
 					send: {
 						type: 'body',

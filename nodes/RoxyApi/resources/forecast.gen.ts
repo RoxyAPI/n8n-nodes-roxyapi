@@ -389,10 +389,10 @@ export const forecastDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',

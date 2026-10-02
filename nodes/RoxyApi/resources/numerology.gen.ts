@@ -122,9 +122,9 @@ export const numerologyDescription: INodeProperties[] = [
 				},
 			},
 			{
-				name: 'Calculate Num Compatibility',
+				name: 'Calculate Numerology Compatibility',
 				value: 'calculateNumCompatibility',
-				action: 'Calculate num compatibility',
+				action: 'Calculate numerology compatibility',
 				description: 'Calculate numerology compatibility: Love match scoring API',
 				routing: {
 					request: {

@@ -351,8 +351,7 @@ export const vastuDescription: INodeProperties[] = [
 					},
 				],
 				default: 'hasta',
-				description:
-					'Unit the Ayadi dimensions are given in. Every remainder is unit sensitive, so this is an input and never assumed: the same building measured in cubits and in feet gives different remainders. hasta is the classical cubit and needs no conversion; feet and metres are converted using hastaInches and...',
+				description: 'Unit the Ayadi dimensions are given in',
 				routing: {
 					send: {
 						type: 'body',
@@ -375,8 +374,7 @@ export const vastuDescription: INodeProperties[] = [
 					},
 				],
 				default: 'p9-10',
-				description:
-					'Which vyaya formula the perimeter family uses. The printed table gives two joined by the word or and states no rule for choosing. p9-10 multiplies by nine and divides by ten, which is the only divisor consistent with the ten member vyaya group, so its remainder can be placed in that group and it...',
+				description: 'Which vyaya formula the perimeter family uses',
 				routing: {
 					send: {
 						type: 'body',
@@ -447,7 +445,7 @@ export const vastuDescription: INodeProperties[] = [
 					numberPrecision: 6,
 				},
 				description:
-					'Where the main door sits along the facing side, as a fraction from 0 to 1 measured from the corner the chapter starts that side at: the north-east for an east facing, the south-east for a south facing, the south-west for a west facing and the north-west for a north facing. The side carries 8...',
+					'Where the main door sits along the facing side, as a fraction from 0 to 1 measured from the corner the chapter starts that side at: the north-east for an east facing, the south-east for a south facing, the south-west for a west facing and the north-west for a north facing',
 				routing: {
 					send: {
 						type: 'body',
@@ -1311,10 +1309,10 @@ export const vastuDescription: INodeProperties[] = [
 		name: 'timezone',
 		type: 'string',
 		default: '',
-		placeholder: 'e.g. America/New_York or America/New_York',
+		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00"). Prefer the IANA name: it is resolved to the offset in force at the birth date and time, historical daylight-saving rules included, while a...',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
 		routing: {
 			send: {
 				type: 'body',
@@ -1414,7 +1412,7 @@ export const vastuDescription: INodeProperties[] = [
 				],
 				default: 'muhurta-chintamani',
 				description:
-					'Which Muhurta text supplies the admissible nakshatras for entering a new house. muhurta-chintamani admits eight and kalaprakasika admits twelve; seven overlap and are the high confidence core, one is unique to the first and five to the second. The two texts are independent witnesses, which is...',
+					'Which Muhurta text supplies the admissible nakshatras for entering a new house. muhurta-chintamani admits eight and kalaprakasika admits twelve; seven overlap and are the high confidence core, one is unique to the first and five to the second.',
 				routing: {
 					send: {
 						type: 'body',

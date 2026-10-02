@@ -147,13 +147,18 @@ function parameter(f: Field): Record<string, unknown> {
 		case 'json':
 			Object.assign(base, { type: 'json', default: JSON.stringify(f.initial ?? {}, null, 2) });
 			break;
-		case 'timezone':
+		case 'timezone': {
+			// One IANA name and one decimal offset, the spec example standing in for whichever it is.
+			const numeric = example !== undefined && !Number.isNaN(Number(example));
 			Object.assign(base, {
 				type: 'string',
 				default: '',
-				placeholder: `e.g. America/New_York or ${example ?? '-5'}`,
+				placeholder: numeric
+					? `e.g. America/New_York or ${example}`
+					: `e.g. ${example ?? 'America/New_York'} or -5`,
 			});
 			break;
+		}
 		default:
 			Object.assign(base, {
 				type: 'string',

@@ -518,7 +518,7 @@ export const angelNumbersDescription: INodeProperties[] = [
 				],
 				default: 'repeating',
 				description:
-					'Filter results by angel number pattern type. "repeating" returns numbers like 111, 444, 7777. "sequential" returns patterns like 1234. "mirror" returns palindrome or alternating patterns like 1212, 717. "master" returns 11, 22, 33. "root" returns single digits 0-9. "compound" returns mixed...',
+					'Filter results by angel number pattern type. "repeating" returns numbers like 111, 444, 7777.',
 				routing: {
 					send: {
 						type: 'query',

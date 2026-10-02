@@ -101,12 +101,19 @@ const RESERVED = new Set(['resource', 'operation', 'options']);
  */
 const RENAMED: Record<string, string> = { limit: 'maxResults', color: 'shade' };
 
-/** Display-only words n8n style requires in a given casing. Never touches a request. */
+/**
+ * Display-only words: a casing n8n style requires, or a clipped spec word spelled out. Upper
+ * case survives the n8n sentence-case fixer, which lowercases every other word. Never
+ * touches a request.
+ */
 const WORDS: Record<string, string> = {
+	bio: 'biorhythm',
 	id: 'ID',
 	iso2: 'ISO2',
-	lang: 'Language',
-	q: 'Query',
+	kp: 'KP',
+	lang: 'language',
+	num: 'numerology',
+	q: 'query',
 	utc: 'UTC',
 };
 
@@ -174,7 +181,8 @@ function words(identifier: string): string[] {
 
 export function titleCase(identifier: string): string {
 	return words(identifier)
-		.map((w, i) => WORDS[w] ?? (i > 0 && SMALL.has(w) ? w : w[0].toUpperCase() + w.slice(1)))
+		.map((w) => WORDS[w] ?? w)
+		.map((w, i) => (i > 0 && SMALL.has(w) ? w : w[0].toUpperCase() + w.slice(1)))
 		.join(' ');
 }
 
@@ -186,10 +194,12 @@ function sentenceCase(identifier: string): string {
 }
 
 /**
- * Tooltip text: plain, one line, at most two sentences and 300 characters. n8n renders it
- * as HTML, so backticks and angle brackets are dropped rather than escaped, and a spaced
- * hyphen used as a dash becomes a colon. A sentence ends at punctuation followed by a
- * capital, so "e.g., aries" never splits.
+ * Tooltip text: plain, one line, at most two sentences and 300 characters. The second
+ * sentence is kept only when it fits whole, so a tooltip is cut mid-sentence only when its
+ * first sentence alone runs past the limit. n8n renders it as HTML, so backticks and angle
+ * brackets are dropped rather than escaped, and a spaced hyphen used as a dash becomes a
+ * colon. A sentence ends at punctuation followed by a capital or an opening quote (a quoted
+ * enum value), never after e.g. or i.e.
  */
 function plain(text: string | undefined, maxSentences = 2): string {
 	const flat = (text ?? '')
@@ -198,10 +208,14 @@ function plain(text: string | undefined, maxSentences = 2): string {
 		.replace(/ (?:-|--|\u2013|\u2014) /g, ': ')
 		.trim();
 	if (!flat) return '';
-	let out = flat
-		.split(/(?<=[.!?])\s+(?=[A-Z])/)
-		.slice(0, maxSentences)
-		.join(' ');
+	const [first, ...rest] = flat
+		.split(/(?<=[.!?])(?<!\b(?:e\.g|i\.e)\.)\s+(?=["A-Z])/)
+		.slice(0, maxSentences);
+	let out = first;
+	for (const sentence of rest) {
+		if (out.length + 1 + sentence.length > 300) break;
+		out += ` ${sentence}`;
+	}
 	if (out.length > 300) out = `${out.slice(0, 297).replace(/\s+\S*$/, '')}...`;
 	return out;
 }
