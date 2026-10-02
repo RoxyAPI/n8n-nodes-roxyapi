@@ -387,7 +387,6 @@ export const kabbalahDescription: INodeProperties[] = [
 				name: 'textHebrew',
 				type: 'string',
 				default: '',
-				placeholder: 'e.g. שלום',
 				description:
 					'Hebrew text to score, up to 200 characters. Anything outside the Hebrew script is rejected.',
 				routing: {
@@ -456,7 +455,6 @@ export const kabbalahDescription: INodeProperties[] = [
 				name: 'firstNameHebrew',
 				type: 'string',
 				default: '',
-				placeholder: 'e.g. שרה',
 				description: 'First name already in Hebrew, which skips the transliteration step',
 				routing: {
 					send: {
@@ -565,7 +563,6 @@ export const kabbalahDescription: INodeProperties[] = [
 				name: 'secondNameHebrew',
 				type: 'string',
 				default: '',
-				placeholder: 'e.g. דוד',
 				description: 'Second name already in Hebrew, which skips the transliteration step',
 				routing: {
 					send: {
@@ -930,7 +927,6 @@ export const kabbalahDescription: INodeProperties[] = [
 				name: 'nameHebrew',
 				type: 'string',
 				default: '',
-				placeholder: 'e.g. שרה',
 				description:
 					'The name already in Hebrew, which skips the transliteration step entirely and scores exactly the spelling you sent',
 				routing: {

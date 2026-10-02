@@ -7,7 +7,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { test } from 'node:test';
-import { buildModel, type Spec } from '../scripts/model.mts';
+import { buildModel, NON_LATIN, type Spec } from '../scripts/model.mts';
 
 type Property = {
 	name: string;
@@ -91,6 +91,17 @@ test('every spec field is a parameter that sends the spec property', () => {
 			}
 		}
 	}
+});
+
+test('every UI string is in the Latin script, as n8n verification requires', () => {
+	const strings = (v: unknown): string[] =>
+		typeof v === 'string'
+			? [v]
+			: v && typeof v === 'object'
+				? Object.values(v).flatMap(strings)
+				: [];
+	const offending = strings(description).filter((s) => NON_LATIN.test(s));
+	assert.deepEqual(offending, []);
 });
 
 test('requests go to the spec server and carry the client tag of this release', () => {

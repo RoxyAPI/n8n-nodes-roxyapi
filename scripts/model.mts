@@ -217,6 +217,17 @@ function whether(text: string, name: string): string {
 		: rewritten;
 }
 
+/** A letter outside the Latin script. n8n verification takes UI text in English only. */
+export const NON_LATIN = /[^\p{Script=Latin}\P{L}]/u;
+
+/**
+ * The example a field shows as its placeholder. A field that takes text in another script
+ * (Hebrew for gematria) shows none, since its description already says what to type.
+ */
+function placeholderExample(sample: unknown): unknown {
+	return typeof sample === 'string' && NON_LATIN.test(sample) ? undefined : sample;
+}
+
 function resolve(spec: Spec, schema: Schema | undefined): Schema {
 	if (!schema?.$ref) return schema ?? {};
 	const name = schema.$ref.replace('#/components/schemas/', '');
@@ -308,7 +319,7 @@ function field(
 		required,
 		description: text,
 		initial: resolved.default ?? sample,
-		example: sample,
+		example: placeholderExample(sample),
 		...shape,
 	};
 }
