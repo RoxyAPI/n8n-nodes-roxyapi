@@ -24262,7 +24262,7 @@
                     "type": "string",
                     "format": "time",
                     "example": "12:00:00",
-                    "description": "Transit time in HH:MM:SS format. Defaults to 12:00:00 (noon) if omitted."
+                    "description": "Transit time in HH:MM:SS format, read on the clock of the natal chart timezone at the transit date (an IANA zone takes the offset in force on that date, daylight saving included). Defaults to 12:00:00 (noon) if omitted."
                   },
                   "planets": {
                     "type": "array",
@@ -63882,8 +63882,8 @@
                           },
                           "orb": {
                             "type": "number",
-                            "example": 0.12,
-                            "description": "For a transit-aspect, the separation in degrees from the exact aspect at the reported instant. Tighter orb means a more exact and significant aspect."
+                            "example": 0,
+                            "description": "For a transit-aspect, the separation in degrees from the exact aspect at the reported instant, rounded to three decimals. The instant is the moment the aspect perfects, so this reads 0. Absent for other event types."
                           },
                           "station": {
                             "type": "string",
@@ -63921,7 +63921,7 @@
                           },
                           "description": {
                             "type": "string",
-                            "example": "Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.",
+                            "example": "Transiting Saturn square natal Moon, an exact aspect.",
                             "description": "Plain-language summary of the event, suitable for direct display. The only localized field: when lang is set this sentence, and the body, target, and aspect names within it, render in the requested language while the structured fields stay English."
                           },
                           "significance": {
@@ -64435,8 +64435,8 @@
                           },
                           "orb": {
                             "type": "number",
-                            "example": 0.12,
-                            "description": "For a transit-aspect, the separation in degrees from the exact aspect at the reported instant. Tighter orb means a more exact and significant aspect."
+                            "example": 0,
+                            "description": "For a transit-aspect, the separation in degrees from the exact aspect at the reported instant, rounded to three decimals. The instant is the moment the aspect perfects, so this reads 0. Absent for other event types."
                           },
                           "station": {
                             "type": "string",
@@ -64474,7 +64474,7 @@
                           },
                           "description": {
                             "type": "string",
-                            "example": "Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.",
+                            "example": "Transiting Saturn square natal Moon, an exact aspect.",
                             "description": "Plain-language summary of the event, suitable for direct display. The only localized field: when lang is set this sentence, and the body, target, and aspect names within it, render in the requested language while the structured fields stay English."
                           },
                           "significance": {
@@ -65038,8 +65038,8 @@
                           },
                           "orb": {
                             "type": "number",
-                            "example": 0.12,
-                            "description": "For a transit-aspect, the separation in degrees from the exact aspect at the reported instant. Tighter orb means a more exact and significant aspect."
+                            "example": 0,
+                            "description": "For a transit-aspect, the separation in degrees from the exact aspect at the reported instant, rounded to three decimals. The instant is the moment the aspect perfects, so this reads 0. Absent for other event types."
                           },
                           "station": {
                             "type": "string",
@@ -65077,7 +65077,7 @@
                           },
                           "description": {
                             "type": "string",
-                            "example": "Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.",
+                            "example": "Transiting Saturn square natal Moon, an exact aspect.",
                             "description": "Plain-language summary of the event, suitable for direct display. The only localized field: when lang is set this sentence, and the body, target, and aspect names within it, render in the requested language while the structured fields stay English."
                           },
                           "significance": {
@@ -65734,8 +65734,8 @@
                                 },
                                 "orb": {
                                   "type": "number",
-                                  "example": 0.12,
-                                  "description": "For a transit-aspect, the separation in degrees from the exact aspect at the reported instant. Tighter orb means a more exact and significant aspect."
+                                  "example": 0,
+                                  "description": "For a transit-aspect, the separation in degrees from the exact aspect at the reported instant, rounded to three decimals. The instant is the moment the aspect perfects, so this reads 0. Absent for other event types."
                                 },
                                 "station": {
                                   "type": "string",
@@ -65773,7 +65773,7 @@
                                 },
                                 "description": {
                                   "type": "string",
-                                  "example": "Transiting Saturn square natal Moon, an exact aspect within 0.12 degrees.",
+                                  "example": "Transiting Saturn square natal Moon, an exact aspect.",
                                   "description": "Plain-language summary of the event, suitable for direct display. The only localized field: when lang is set this sentence, and the body, target, and aspect names within it, render in the requested language while the structured fields stay English."
                                 },
                                 "significance": {
