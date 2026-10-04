@@ -909,7 +909,7 @@ export const astrologyDescription: INodeProperties[] = [
 		name: 'person1',
 		type: 'json',
 		default:
-			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": -5,\n  "nodeType": "true"\n}',
+			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": "America/New_York",\n  "nodeType": "true"\n}',
 		required: true,
 		description:
 			'First person birth details (date, time, location, timezone). Required for calculating natal planetary positions.',
@@ -932,7 +932,7 @@ export const astrologyDescription: INodeProperties[] = [
 		name: 'person2',
 		type: 'json',
 		default:
-			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": -5,\n  "nodeType": "true"\n}',
+			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": "America/New_York",\n  "nodeType": "true"\n}',
 		required: true,
 		description:
 			'Second person birth details. Compared against person1 to evaluate inter-chart aspects and compatibility.',
@@ -1231,7 +1231,7 @@ export const astrologyDescription: INodeProperties[] = [
 		name: 'person1',
 		type: 'json',
 		default:
-			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": -5,\n  "nodeType": "true",\n  "name": "Alex"\n}',
+			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": "America/New_York",\n  "nodeType": "true",\n  "name": "Alex"\n}',
 		required: true,
 		routing: {
 			send: {
@@ -1252,7 +1252,7 @@ export const astrologyDescription: INodeProperties[] = [
 		name: 'person2',
 		type: 'json',
 		default:
-			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": -5,\n  "nodeType": "true",\n  "name": "Alex"\n}',
+			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": "America/New_York",\n  "nodeType": "true",\n  "name": "Alex"\n}',
 		required: true,
 		routing: {
 			send: {
@@ -1376,7 +1376,7 @@ export const astrologyDescription: INodeProperties[] = [
 		name: 'natalChart',
 		type: 'json',
 		default:
-			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": -5,\n  "nodeType": "true"\n}',
+			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": "America/New_York",\n  "nodeType": "true"\n}',
 		required: true,
 		description:
 			'Natal chart birth details (date, time, location, timezone). Used to calculate natal planetary positions that transits are compared against.',
@@ -1756,7 +1756,7 @@ export const astrologyDescription: INodeProperties[] = [
 				name: 'natalChart',
 				type: 'json',
 				default:
-					'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": -5\n}',
+					'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": "America/New_York"\n}',
 				description: 'Optional natal chart data to compare transits against',
 				routing: {
 					send: {
@@ -2546,7 +2546,7 @@ export const astrologyDescription: INodeProperties[] = [
 		name: 'person1',
 		type: 'json',
 		default:
-			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": -5,\n  "nodeType": "true"\n}',
+			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": "America/New_York",\n  "nodeType": "true"\n}',
 		required: true,
 		description: 'First person birth details (date, time, location, timezone)',
 		routing: {
@@ -2568,7 +2568,7 @@ export const astrologyDescription: INodeProperties[] = [
 		name: 'person2',
 		type: 'json',
 		default:
-			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": -5,\n  "nodeType": "true"\n}',
+			'{\n  "date": "1990-07-15",\n  "time": "14:30:00",\n  "latitude": 40.7128,\n  "longitude": -74.006,\n  "timezone": "America/New_York",\n  "nodeType": "true"\n}',
 		required: true,
 		description: 'Second person birth details (date, time, location, timezone)',
 		routing: {
