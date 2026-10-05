@@ -44,7 +44,7 @@ export const resourceProperties: INodeProperties[] = [
 				name: 'Biorhythm',
 				value: 'biorhythm',
 				description:
-					'The most complete biorhythm API: 10 cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom)',
+					'Biorhythm API for entertainment and reflection, with 10 model cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom)',
 			},
 			{
 				name: 'Chinese Astrology',
@@ -74,7 +74,7 @@ export const resourceProperties: INodeProperties[] = [
 				name: 'Forecast',
 				value: 'forecast',
 				description:
-					'Astrology forecast API that merges upcoming transit aspects, sign ingresses, retrograde stations, new and full moons, biorhythm critical days, and Vimshottari dasha changes into one time-ordered forecast for a single subject',
+					'Astrology forecast API that merges upcoming transit aspects, sign ingresses, retrograde stations, new and full moons, biorhythm critical days, and Vimshottari dasha changes into one time-ordered forecast for a single subject, with positions verified against NASA JPL Horizons',
 			},
 			{
 				name: 'Human Design',
@@ -92,7 +92,7 @@ export const resourceProperties: INodeProperties[] = [
 				name: 'Kabbalah',
 				value: 'kabbalah',
 				description:
-					'Kabbalah API for gematria, the 72 names, the Tree of Life and the Hebrew birthday, from one key',
+					'Kabbalah API for gematria, the 72 names, the Tree of Life and the Hebrew birthday',
 			},
 			{
 				name: 'Language',

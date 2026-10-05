@@ -236,7 +236,7 @@ Vedic astrology (Jyotish) and KP API for kundli generation with the sixteen Shod
 
 ### Forecast
 
-Astrology forecast API that merges upcoming transit aspects, sign ingresses, retrograde stations, new and full moons, biorhythm critical days, and Vimshottari dasha changes into one time-ordered forecast for a single subject.
+Astrology forecast API that merges upcoming transit aspects, sign ingresses, retrograde stations, new and full moons, biorhythm critical days, and Vimshottari dasha changes into one time-ordered forecast for a single subject, with positions verified against NASA JPL Horizons.
 
 - **Generate Timeline**: Cross-domain forecast timeline: Transits, ingresses, stations, dasha changes, critical days
 - **Forecast Transits**: Western astrology forecast: aspects, ingresses, stations, eclipses, moon phases
@@ -363,7 +363,7 @@ Numerology API for life path numbers, complete numerology charts and compatibili
 
 ### Kabbalah
 
-Kabbalah API for gematria, the 72 names, the Tree of Life and the Hebrew birthday, from one key.
+Kabbalah API for gematria, the 72 names, the Tree of Life and the Hebrew birthday.
 
 - **Calculate Gematria**: Calculate gematria: Hebrew gematria calculator API with every spelling shown
 - **List Gematria Ciphers**: List gematria ciphers: gematria methods API with provenance on every row
@@ -395,7 +395,7 @@ Tarot reading API with the complete 78-card Rider-Waite-Smith deck and card mean
 
 ### Biorhythm
 
-The most complete biorhythm API: 10 cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom).
+Biorhythm API for entertainment and reflection, with 10 model cycle types across 3 primary (physical, emotional, intellectual), 4 secondary (intuitive, aesthetic, awareness, spiritual), and 3 composite (passion, mastery, wisdom).
 
 - **Get Reading**: Get biorhythm reading: Complete cycle analysis for any date
 - **Get Forecast**: Get biorhythm forecast: Multi-day cycle predictions with best and worst days
