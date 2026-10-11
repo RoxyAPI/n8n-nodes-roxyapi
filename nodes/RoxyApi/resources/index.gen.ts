@@ -62,7 +62,7 @@ export const resourceProperties: INodeProperties[] = [
 				name: 'Dream',
 				value: 'dreams',
 				description:
-					'Dream interpretation API with a 2,000+ symbol dream dictionary and psychological meanings covering animals, objects, emotions, people, scenarios, and abstract concepts',
+					'Dream interpretation API with a 2,200+ symbol dream dictionary and psychological meanings covering animals, objects, emotions, people, scenarios, and abstract concepts',
 			},
 			{
 				name: 'Feng Shui',

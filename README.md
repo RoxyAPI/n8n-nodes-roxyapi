@@ -450,7 +450,7 @@ Crystal healing API covering the most popular and widely-searched healing crysta
 
 ### Dream
 
-Dream interpretation API with a 2,000+ symbol dream dictionary and psychological meanings covering animals, objects, emotions, people, scenarios, and abstract concepts.
+Dream interpretation API with a 2,200+ symbol dream dictionary and psychological meanings covering animals, objects, emotions, people, scenarios, and abstract concepts.
 
 - **Search Dream Symbols**: List and search dream symbols: Dream dictionary API
 - **Get Random Symbols**: Random dream symbols: Dream symbol discovery API
