@@ -10,9 +10,13 @@ Build a daily horoscope newsletter, a natal chart on every form submission, a ta
 
 ## How do I install the RoxyAPI node in n8n?
 
-1. In n8n, open **Settings → Community Nodes → Install**.
-2. Enter `@roxyapi/n8n-nodes-roxyapi` and confirm.
-3. Add a node to any workflow and search for **RoxyAPI**, or for what you need: horoscope, natal chart, tarot, numerology, kundli.
+RoxyAPI is a verified community node, so it installs on n8n Cloud and self-hosted n8n alike.
+
+1. On the canvas, open the nodes panel and search for **RoxyAPI**.
+2. Select **RoxyAPI**, marked with the verified badge, then **Install node**. The instance owner or an admin installs it once for everyone.
+3. Add the **RoxyAPI** node to any workflow.
+
+On self-hosted n8n it also installs from **Settings → Community Nodes → Install** with `@roxyapi/n8n-nodes-roxyapi`.
 
 The [n8n community node installation guide](https://docs.n8n.io/integrations/community-nodes/installation/) covers every install path.
 
