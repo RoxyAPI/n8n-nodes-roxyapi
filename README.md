@@ -1,12 +1,15 @@
 # RoxyAPI node for n8n: astrology, horoscopes, tarot and numerology in any workflow or AI Agent
 
+[![Verified n8n node](https://img.shields.io/badge/n8n-verified_community_node-ea4b71?logo=n8n&logoColor=white)](https://n8n.io/integrations/roxyapi/)
 [![npm](https://img.shields.io/npm/v/@roxyapi/n8n-nodes-roxyapi)](https://www.npmjs.com/package/@roxyapi/n8n-nodes-roxyapi)
 [![CI](https://github.com/RoxyAPI/n8n-nodes-roxyapi/actions/workflows/ci.yml/badge.svg)](https://github.com/RoxyAPI/n8n-nodes-roxyapi/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/RoxyAPI/n8n-nodes-roxyapi/blob/main/LICENSE)
 
-**The official RoxyAPI community node for [n8n](https://n8n.io/).** One node and one API key cover Western astrology, Vedic astrology, astrology forecasts, Human Design, Chinese astrology and BaZi, feng shui, Mayan astrology, Vastu, numerology, Kabbalah, tarot, biorhythm, Ayurveda, I Ching, crystals, dream interpretation, angel numbers, and city and timezone lookup. Every calculation is verified against NASA JPL Horizons, and the node runs as a normal workflow step or as a tool for the n8n AI Agent.
+**The official RoxyAPI node, [verified by n8n](https://n8n.io/integrations/roxyapi/) and available on n8n Cloud and self-hosted n8n.** One node and one API key cover Western astrology, Vedic astrology, astrology forecasts, Human Design, Chinese astrology and BaZi, feng shui, Mayan astrology, Vastu, numerology, Kabbalah, tarot, biorhythm, Ayurveda, I Ching, crystals, dream interpretation, angel numbers, and city and timezone lookup. Planetary positions are verified against NASA JPL Horizons, and the node runs as a normal workflow step or as a tool for the n8n AI Agent.
 
 Build a daily horoscope newsletter, a natal chart on every form submission, a tarot reading chat bot, or an AI astrologer that picks the right calculation on its own, without writing a single HTTP request.
+
+**Start with the [approved AI astrology chatbot template in the n8n workflow library](https://n8n.io/workflows/21165-give-ai-astrology-readings-via-chat-and-telegram-with-roxyapi-gemini-openai-and-claude/).** Select **Use for free** for multi-agent readings on web chat and Telegram, saved birth profiles, compatibility reports and daily forecasts. The template is free; a RoxyAPI key and an AI provider key are required. [Source and setup guide](https://github.com/RoxyAPI/n8n-ai-astrology-chatbot).
 
 ## How do I install the RoxyAPI node in n8n?
 
