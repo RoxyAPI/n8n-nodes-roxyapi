@@ -104,7 +104,7 @@ export const resourceProperties: INodeProperties[] = [
 				name: 'Location and Timezone',
 				value: 'location',
 				description:
-					'Timezone and location API with city search and geocoding across 235,000+ cities in 240+ countries, returning latitude, longitude, IANA timezone, and DST-aware UTC offset',
+					'Timezone and location API with city search and geocoding across 5,180,000+ cities, towns and villages in 240+ countries, returning latitude, longitude, IANA timezone, and DST-aware UTC offset',
 			},
 			{
 				name: 'Mesoamerican Astrology',
