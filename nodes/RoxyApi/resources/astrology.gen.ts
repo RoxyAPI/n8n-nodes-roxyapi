@@ -4571,6 +4571,38 @@ export const astrologyDescription: INodeProperties[] = [
 		},
 		options: [
 			{
+				displayName: 'House System',
+				name: 'houseSystem',
+				type: 'options',
+				options: [
+					{
+						name: 'Equal',
+						value: 'equal',
+					},
+					{
+						name: 'Koch',
+						value: 'koch',
+					},
+					{
+						name: 'Placidus',
+						value: 'placidus',
+					},
+					{
+						name: 'Whole Sign',
+						value: 'whole-sign',
+					},
+				],
+				default: 'placidus',
+				description:
+					'House system of the natal chart that every progressed body is placed in. Pass the system the natal chart was drawn in so the house numbers match it.',
+				routing: {
+					send: {
+						type: 'body',
+						property: 'houseSystem',
+					},
+				},
+			},
+			{
 				displayName: 'Language',
 				name: 'lang',
 				type: 'options',

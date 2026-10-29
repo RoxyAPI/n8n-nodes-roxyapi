@@ -2280,7 +2280,7 @@ export const numerologyDescription: INodeProperties[] = [
 					maxValue: 2100,
 				},
 				description:
-					'Calendar year for the Personal Year, defaults to the current UTC year. It moves the Personal Year only: the nested personalMonth and maturityStatus.currentAge always read the current UTC date.',
+					'Calendar year for the Personal Year. When omitted it is the year of targetDate, or of the current UTC date when targetDate is omitted too.',
 				routing: {
 					send: {
 						type: 'body',
@@ -2341,6 +2341,21 @@ export const numerologyDescription: INodeProperties[] = [
 					send: {
 						type: 'query',
 						property: 'lang',
+					},
+				},
+			},
+			{
+				displayName: 'Target Date',
+				name: 'targetDate',
+				type: 'string',
+				default: '',
+				placeholder: 'e.g. 2026-10-28',
+				description:
+					'Date to read the chart on, in YYYY-MM-DD format, in the years 100 to 2100, on or after the birth date. Send the local date of the user for an exact answer: it sets maturityStatus.currentAge and isActive, the Personal Month, and the Personal Year when currentYear is absent.',
+				routing: {
+					send: {
+						type: 'body',
+						property: 'targetDate',
 					},
 				},
 			},

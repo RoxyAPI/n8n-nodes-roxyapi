@@ -774,6 +774,21 @@ export const kabbalahDescription: INodeProperties[] = [
 				},
 			},
 			{
+				displayName: 'Target Date',
+				name: 'targetDate',
+				type: 'string',
+				default: '',
+				placeholder: 'e.g. 2026-10-28',
+				description:
+					'Date to count the next Hebrew birthday from, in YYYY-MM-DD format. Send the local date of the user for an exact answer: on the birthday itself the answer is that day.',
+				routing: {
+					send: {
+						type: 'body',
+						property: 'targetDate',
+					},
+				},
+			},
+			{
 				displayName: 'Time',
 				name: 'time',
 				type: 'string',

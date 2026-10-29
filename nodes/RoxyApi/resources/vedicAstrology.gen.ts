@@ -4993,7 +4993,8 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 			numberPrecision: 6,
 		},
 		required: true,
-		description: 'Birth location latitude in decimal degrees',
+		description:
+			'Birth location latitude in decimal degrees. The latitude must lie below 66.56 degrees north or south, inside the polar circles: KP cusps are Placidus, which has no solution beyond them, so a polar latitude returns 400.',
 		routing: {
 			send: {
 				type: 'body',
@@ -6831,7 +6832,8 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 			numberPrecision: 6,
 		},
 		required: true,
-		description: 'Birth location latitude in decimal degrees',
+		description:
+			'Birth location latitude in decimal degrees. The latitude must lie below 66.56 degrees north or south, inside the polar circles: KP cusps are Placidus, which has no solution beyond them, so a polar latitude returns 400.',
 		routing: {
 			send: {
 				type: 'body',
@@ -7345,7 +7347,8 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 			numberPrecision: 6,
 		},
 		required: true,
-		description: 'Birth location latitude in decimal degrees',
+		description:
+			'Birth location latitude in decimal degrees. Accepted at any latitude, polar included: planet longitudes are geocentric and the star and sub lords are divisions of longitude, so no house cusp is involved.',
 		routing: {
 			send: {
 				type: 'body',
@@ -7959,7 +7962,8 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 			numberPrecision: 6,
 		},
 		required: true,
-		description: 'Observer latitude in decimal degrees',
+		description:
+			'Observer latitude in decimal degrees. The latitude must lie below 66.56 degrees north or south, inside the polar circles: KP cusps are Placidus, which has no solution beyond them, so a polar latitude returns 400.',
 		routing: {
 			send: {
 				type: 'body',
@@ -8176,7 +8180,8 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 			numberPrecision: 6,
 		},
 		required: true,
-		description: 'Observer latitude in decimal degrees',
+		description:
+			'Observer latitude in decimal degrees. Any latitude for the ruling planets alone; with birthDate and birthTime the significators read Placidus cusps, so the latitude must lie below 66.56 degrees north or south and a polar latitude returns 400.',
 		routing: {
 			send: {
 				type: 'body',
@@ -8384,7 +8389,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				default: '',
 				placeholder: 'e.g. America/New_York or 5.5',
 				description:
-					'Timezone: IANA name (e.g. "America/New_York", "Europe/London") OR decimal hours from UTC. IANA resolved to the DST-correct offset based on birthDate or datetime.',
+					'Timezone: IANA name (e.g. "America/New_York", "Europe/London") OR decimal hours from UTC. An IANA name is resolved to the DST-correct offset of each moment separately: at datetime for the ruling planets, and at birthDate and birthTime for the significators.',
 				routing: {
 					send: {
 						type: 'body',
@@ -12266,7 +12271,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				default: '',
 				placeholder: 'e.g. America/New_York or 5.5',
 				description:
-					'Timezone: IANA name (e.g. "Asia/Kolkata", "America/New_York") OR decimal hours from UTC (e.g. -5 for EST, 5.5 for IST). IANA strings are resolved to the DST-correct offset for the date being read.',
+					'Timezone: IANA name (e.g. "Asia/Kolkata", "America/New_York") OR decimal hours from UTC (e.g. -5 for EST, 5.5 for IST). IANA strings are resolved twice, each to the DST-correct offset of its own moment: at the birth date and time for the birth chart, and on the date being read for the reading day.',
 				routing: {
 					send: {
 						type: 'body',
