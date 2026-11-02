@@ -15,6 +15,15 @@ updates:
       # verification re-runs. A bump can change fixer output, so it moves by hand with a
       # regenerate, a lint and a dispatched release, never by dependabot.
       - dependency-name: '@n8n/node-cli'
+      # eslint and typescript stay on the majors the n8n toolchain supports: its lint
+      # stack pins eslint 9 and accepts typescript below 6.1.
+      - dependency-name: 'eslint'
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'typescript'
+        update-types: ['version-update:semver-major']
+      # Types track the Node major CI runs (24), not the newest Node.
+      - dependency-name: '@types/node'
+        update-types: ['version-update:semver-major']
 
   - package-ecosystem: github-actions
     directory: /
