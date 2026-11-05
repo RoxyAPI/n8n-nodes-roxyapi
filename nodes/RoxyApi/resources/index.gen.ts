@@ -19,6 +19,7 @@ import { dreamsDescription } from './dreams.gen';
 import { angelNumbersDescription } from './angelNumbers.gen';
 import { locationDescription } from './location.gen';
 import { usageDescription } from './usage.gen';
+import { reportsDescription } from './reports.gen';
 import { languagesDescription } from './languages.gen';
 
 export const resourceProperties: INodeProperties[] = [
@@ -119,6 +120,12 @@ export const resourceProperties: INodeProperties[] = [
 					'Numerology API for life path numbers, complete numerology charts and compatibility, in both Pythagorean and Chaldean numerology',
 			},
 			{
+				name: 'Report',
+				value: 'reports',
+				description:
+					'Branded reports built from the API: a natal chart and more as a print-ready PDF, self-contained HTML or Markdown, white-labelled with your name, logo, colours and typeface, in every supported language',
+			},
+			{
 				name: 'Tarot',
 				value: 'tarot',
 				description:
@@ -169,5 +176,6 @@ export const resourceProperties: INodeProperties[] = [
 	...angelNumbersDescription,
 	...locationDescription,
 	...usageDescription,
+	...reportsDescription,
 	...languagesDescription,
 ];

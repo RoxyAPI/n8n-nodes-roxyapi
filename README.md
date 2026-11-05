@@ -34,7 +34,7 @@ The [n8n community node installation guide](https://docs.n8n.io/integrations/com
 Pick a **Resource** (the domain), then an **Operation** (the calculation). Required inputs show as fields; everything optional, including the response language, sits under **Options**.
 
 <!-- BEGIN:RESOURCES -->
-261 operations across 20 resources, one per RoxyAPI domain, in the order the API lists them.
+270 operations across 21 resources, one per RoxyAPI domain, in the order the API lists them.
 
 | Resource | Operations |
 |---|---|
@@ -57,6 +57,7 @@ Pick a **Resource** (the domain), then an **Operation** (the calculation). Requi
 | Angel Number | 4 |
 | Location and Timezone | 3 |
 | Usage | 1 |
+| Report | 9 |
 | Language | 2 |
 <!-- END:RESOURCES -->
 
@@ -487,6 +488,20 @@ Timezone and location API with city search and geocoding across 5,180,000+ citie
 Monitor your API usage, check rate limits, and track request consumption.
 
 - **Get Usage Stats**: Get API usage statistics
+
+### Report
+
+Branded reports built from the API: a natal chart and more as a print-ready PDF, self-contained HTML or Markdown, white-labelled with your name, logo, colours and typeface, in every supported language.
+
+- **Generate Natal Report**: Natal chart report: Branded PDF report API
+- **Generate Synastry Report**: Synastry report: Branded PDF report API
+- **Generate Kundli Report**: Kundli report: Branded PDF report API
+- **Generate Matchmaking Report**: Kundli matching report: Branded PDF report API
+- **Generate Yearly Forecast Report**: Yearly forecast report: Branded PDF report API
+- **Generate Human Design Report**: Human Design report: Branded PDF report API
+- **Generate Bazi Report**: BaZi report: Branded PDF report API
+- **Generate Numerology Report**: Numerology report: Branded PDF report API
+- **Generate Tarot Report**: Tarot reading report: Branded PDF report API
 
 ### Language
 
