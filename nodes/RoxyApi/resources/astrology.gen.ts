@@ -5706,7 +5706,7 @@ export const astrologyDescription: INodeProperties[] = [
 				default: '',
 				placeholder: 'e.g. America/New_York',
 				description:
-					'Selects which period counts as current when date is omitted. Defaults to UTC, so the forecast rolls over at 00:00 UTC on each day.',
+					'The clock the day is read on: it decides which events fall on the date, so a transit the evening before in the timezone of the end user is never called today, and which date is current when date is omitted. Defaults to UTC.',
 				routing: {
 					send: {
 						type: 'query',
@@ -6036,7 +6036,7 @@ export const astrologyDescription: INodeProperties[] = [
 				default: '',
 				placeholder: 'e.g. America/New_York',
 				description:
-					'Selects which period counts as current when date is omitted. Defaults to UTC, so the forecast rolls over at 00:00 UTC on the 1st.',
+					'The clock the month is read on: it decides which events fall inside the calendar month, the date each is dated by, and which month is current when date is omitted. Defaults to UTC.',
 				routing: {
 					send: {
 						type: 'query',
@@ -7220,7 +7220,7 @@ export const astrologyDescription: INodeProperties[] = [
 				default: '',
 				placeholder: 'e.g. America/New_York',
 				description:
-					'Selects which period counts as current when date is omitted. Defaults to UTC, so the forecast rolls over at 00:00 UTC on each Monday.',
+					'The clock the week is read on: it decides which events fall inside the Monday to Sunday week, the day each is dated by, and which week is current when date is omitted. Defaults to UTC.',
 				routing: {
 					send: {
 						type: 'query',
