@@ -202,7 +202,8 @@ export const astrologyDescription: INodeProperties[] = [
 				name: 'Generate Natal Chart',
 				value: 'generateNatalChart',
 				action: 'Generate natal chart',
-				description: 'Generate natal chart: Birth chart calculator API with houses and aspects',
+				description:
+					'Generate natal chart: Birth chart API with houses, aspects and a written reading',
 				routing: {
 					request: {
 						method: 'POST',

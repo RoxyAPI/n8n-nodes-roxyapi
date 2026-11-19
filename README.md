@@ -137,13 +137,13 @@ Built and tested with the n8n community node toolchain on n8n 2.x. The node has 
 <!-- BEGIN:OPERATIONS -->
 ### Western Astrology
 
-Western astrology API for natal birth charts, daily, weekly, monthly, and yearly horoscopes with unique content per sign and the dated sky events behind every reading, synastry compatibility scores, composite charts, solar and lunar returns, real-time transit aspects, and moon phases. 4 house...
+Western astrology API for natal birth charts with an editorial reading of the whole chart, daily, weekly, monthly, and yearly horoscopes with unique content per sign and the dated sky events behind every reading, synastry compatibility scores, composite charts, solar and lunar returns, real-time...
 
 - **List Zodiac Signs**: Get all zodiac signs: Complete zodiac signs list with dates and elements
 - **Get Zodiac Sign**: Get zodiac sign details: Complete astrology sign profile with personality traits
 - **List Planet Meanings**: Get all planet meanings: Complete astrology planet interpretations list
 - **Get Planet Meaning**: Get planet meaning details: Complete astrology planet interpretation
-- **Generate Natal Chart**: Generate natal chart: Birth chart calculator API with houses and aspects
+- **Generate Natal Chart**: Generate natal chart: Birth chart API with houses, aspects and a written reading
 - **Get Planetary Positions**: Get planetary positions: Ephemeris calculator for all planets
 - **Get Monthly Tropical Ephemeris**: Monthly Ephemeris: Daily tropical planetary positions for a month
 - **Get Current Moon Phase**: Get current moon phase: Lunar phase calculator with zodiac sign

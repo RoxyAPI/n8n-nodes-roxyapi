@@ -152,7 +152,7 @@ export const resourceProperties: INodeProperties[] = [
 				name: 'Western Astrology',
 				value: 'astrology',
 				description:
-					'Western astrology API for natal birth charts, daily, weekly, monthly, and yearly horoscopes with unique content per sign and the dated sky events behind every reading, synastry compatibility scores, composite charts, solar and lunar returns, real-time transit aspects, and moon phases. 4 house...',
+					'Western astrology API for natal birth charts with an editorial reading of the whole chart, daily, weekly, monthly, and yearly horoscopes with unique content per sign and the dated sky events behind every reading, synastry compatibility scores, composite charts, solar and lunar returns, real-time',
 			},
 		],
 		default: 'astrology',
