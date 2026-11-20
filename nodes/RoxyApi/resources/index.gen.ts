@@ -146,7 +146,7 @@ export const resourceProperties: INodeProperties[] = [
 				name: 'Vedic Astrology',
 				value: 'vedicAstrology',
 				description:
-					'Vedic astrology (Jyotish) and KP API for kundli generation with the sixteen Shodasavarga divisional charts (D1 to D60), panchang with choghadiya, hora and the classical muhurta windows, kundli matching by Ashtakoot Gun Milan, the South Indian ten porutham with Rajju and Vedha vetoes and',
+					'Vedic astrology (Jyotish) and KP API for kundli generation with an editorial reading of the whole chart, the sixteen Shodasavarga divisional charts (D1 to D60), panchang with choghadiya, hora and the classical muhurta windows, kundli matching by Ashtakoot Gun Milan, the South Indian ten porutham',
 			},
 			{
 				name: 'Western Astrology',

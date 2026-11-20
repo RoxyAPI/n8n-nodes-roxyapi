@@ -181,9 +181,9 @@ Western astrology API for natal birth charts with an editorial reading of the wh
 
 ### Vedic Astrology
 
-Vedic astrology (Jyotish) and KP API for kundli generation with the sixteen Shodasavarga divisional charts (D1 to D60), panchang with choghadiya, hora and the classical muhurta windows, kundli matching by Ashtakoot Gun Milan, the South Indian ten porutham with Rajju and Vedha vetoes and...
+Vedic astrology (Jyotish) and KP API for kundli generation with an editorial reading of the whole chart, the sixteen Shodasavarga divisional charts (D1 to D60), panchang with choghadiya, hora and the classical muhurta windows, kundli matching by Ashtakoot Gun Milan, the South Indian ten porutham...
 
-- **Generate Birth Chart**: Get birth chart (D1 Rashi chart): Kundli Calculator API
+- **Generate Birth Chart**: Get birth chart (D1 Rashi chart): Kundli API with a written chart reading
 - **Generate Navamsa**: Get Navamsa chart (D9): Marriage Compatibility Calculator
 - **Generate Divisional Chart**: Get divisional chart (Varga): D2 to D60 Calculator
 - **Calculate Gun Milan**: Calculate compatibility score: Gun Milan API (Ashtakoot Matching)

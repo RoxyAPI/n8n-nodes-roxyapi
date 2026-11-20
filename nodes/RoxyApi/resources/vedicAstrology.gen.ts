@@ -222,7 +222,7 @@ export const vedicAstrologyDescription: INodeProperties[] = [
 				name: 'Generate Birth Chart',
 				value: 'generateBirthChart',
 				action: 'Generate birth chart',
-				description: 'Get birth chart (D1 Rashi chart): Kundli Calculator API',
+				description: 'Get birth chart (D1 Rashi chart): Kundli API with a written chart reading',
 				routing: {
 					request: {
 						method: 'POST',
