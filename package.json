@@ -83,7 +83,7 @@
 		"@types/pluralize": "0.0.33",
 		"eslint": "9.39.5",
 		"pluralize": "8.0.0",
-		"prettier": "3.9.10",
+		"prettier": "3.10.1",
 		"typescript": "5.9.3"
 	},
 	"peerDependencies": {
