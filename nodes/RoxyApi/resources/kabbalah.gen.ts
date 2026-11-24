@@ -627,7 +627,7 @@ export const kabbalahDescription: INodeProperties[] = [
 		placeholder: 'e.g. America/New_York or -5',
 		required: true,
 		description:
-			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00").',
+			'IANA name (e.g. "America/New_York", "Europe/London", "UTC"), decimal hours (e.g. -5 for EST, 1 for CET), or a fixed UTC offset (e.g. "-05:00", "+01:00", "-06:20:19").',
 		routing: {
 			send: {
 				type: 'body',
